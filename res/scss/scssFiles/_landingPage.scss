@@ -19,6 +19,7 @@
 
     h1 {
       margin-bottom: 50px;
+      color: white;
     }
 
     a {
@@ -26,6 +27,12 @@
       font-weight: bold;
       border: 2px solid white;
       border-radius: 5px;
+      color: white;
+      transition: all .5s ease;
+      &:hover {
+        transition: all .5s ease;
+        margin-left: 10px;
+      }
     }
 
   }

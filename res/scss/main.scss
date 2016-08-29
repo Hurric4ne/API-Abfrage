@@ -1,5 +1,5 @@
 //scss variables
-$header_height: 10vh;
+$header_height: 11vh;
 $footer_height: 5vh;
 $main_height: 100vh - ($header_height + $footer_height);
 
@@ -38,5 +38,4 @@ $main_height: 100vh - ($header_height + $footer_height);
   outline: none;
   text-decoration: none;
   list-style: none;
-  color: white;
 }

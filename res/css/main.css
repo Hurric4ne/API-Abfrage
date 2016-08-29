@@ -1,14 +1,14 @@
 header {
   width: 100vw;
-  height: 10vh;
+  height: 11vh;
   background-color: #808080;
-  box-shadow: 0 5px 10px #808080;
 }
 
 header h3 {
   font-family: 'Diablo3';
   font-size: 40px;
   text-align: center;
+  color: white;
 }
 
 header nav {
@@ -16,21 +16,44 @@ header nav {
 }
 
 header nav ul {
-  width: 761px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 header nav ul a {
   float: left;
+  font-family: 'Diablo3';
   font-size: 25px;
+  color: white;
   border: 1px solid white;
   border-radius: 5px;
-  padding: 2px 4px 2px 4px;
+  box-shadow: 0px 7px 5px -3px black;
+  padding: 5px 7px 5px 7px;
   margin: 0 10px 0 10px;
+  transition: all .5s ease;
 }
 
-header nav ul a:first-of-type, header nav ul a:last-of-type {
-  margin: 0;
+header nav ul a:hover {
+  transition: all .5s ease;
+  margin-top: 5px;
+}
+
+header nav ul a:first-of-type {
+  margin-left: 0;
+}
+
+header nav ul a:last-of-type {
+  margin-right: 0;
+}
+
+header nav ul .active {
+  color: lime;
+  border: 1px solid lime;
+  cursor: default;
+}
+
+header nav ul .active:hover {
+  margin-top: 0;
 }
 
 footer {
@@ -40,6 +63,7 @@ footer {
 }
 
 footer p {
+  color: white;
   text-align: center;
   line-height: 2.5vh;
   font-family: 'Diablo3';
@@ -68,6 +92,7 @@ footer p {
 
 .bg .landingPage_Wrapper h1 {
   margin-bottom: 50px;
+  color: white;
 }
 
 .bg .landingPage_Wrapper a {
@@ -75,12 +100,51 @@ footer p {
   font-weight: bold;
   border: 2px solid white;
   border-radius: 5px;
+  color: white;
+  transition: all .5s ease;
+}
+
+.bg .landingPage_Wrapper a:hover {
+  transition: all .5s ease;
+  margin-left: 10px;
 }
 
 main {
   padding: 10px 0 10px 0;
-  height: 85vh;
+  height: 84vh;
   background-color: #d3d3d3;
+}
+
+main .input-wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+main .input-wrapper input[name="BattleTag"] {
+  height: 35px;
+  width: 180px;
+  font-size: 20px;
+  padding: 5px 0 5px 10px;
+  border-radius: 5px;
+}
+
+main .input-wrapper input[name="search"] {
+  margin-left: 15px;
+  font-family: 'Diablo3';
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main .account-wrapper {
+  width: 80vw;
+  height: 20vh;
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 1px solid red;
 }
 
 header nav ul {
@@ -108,5 +172,4 @@ header nav ul:after {
   outline: none;
   text-decoration: none;
   list-style: none;
-  color: white;
 }
