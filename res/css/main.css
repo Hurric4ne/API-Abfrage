@@ -1,0 +1,47 @@
+.bg {
+  background: url("../img/background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg .landingPage_Wrapper {
+  color: white;
+  width: 80vw;
+  margin: 0 auto;
+  height: 20vh;
+  padding-top: 45%;
+  transform: translateY(-50%);
+  font-family: 'Diablo3';
+  font-size: 40px;
+  text-align: center;
+}
+
+.bg .landingPage_Wrapper h1 {
+  margin-bottom: 50px;
+}
+
+.bg .landingPage_Wrapper a {
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+@font-face {
+  font-family: 'Diablo3';
+  src: url("exocet-blizzard-light.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
