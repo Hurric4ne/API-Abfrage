@@ -1,3 +1,50 @@
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #808080;
+  box-shadow: 0 5px 10px #808080;
+}
+
+header h3 {
+  font-family: 'Diablo3';
+  font-size: 40px;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav ul {
+  width: 761px;
+  margin: 0 auto;
+}
+
+header nav ul a {
+  float: left;
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2px 4px 2px 4px;
+  margin: 0 10px 0 10px;
+}
+
+header nav ul a:first-of-type, header nav ul a:last-of-type {
+  margin: 0;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background: linear-gradient(#9a9a9a, #5a5a5a);
+}
+
+footer p {
+  text-align: center;
+  line-height: 2.5vh;
+  font-family: 'Diablo3';
+}
+
 .bg {
   background: url("../img/background.jpg");
   width: 100vw;
@@ -9,7 +56,6 @@
 }
 
 .bg .landingPage_Wrapper {
-  color: white;
   width: 80vw;
   margin: 0 auto;
   height: 20vh;
@@ -26,10 +72,28 @@
 
 .bg .landingPage_Wrapper a {
   padding: 5px 10px 5px 10px;
-  color: white;
   font-weight: bold;
   border: 2px solid white;
   border-radius: 5px;
+}
+
+main {
+  padding: 10px 0 10px 0;
+  height: 85vh;
+  background-color: #d3d3d3;
+}
+
+header nav ul {
+  *zoom: 1;
+}
+
+header nav ul:before, header nav ul:after {
+  content: "";
+  display: table;
+}
+
+header nav ul:after {
+  clear: both;
 }
 
 @font-face {
@@ -44,4 +108,5 @@
   outline: none;
   text-decoration: none;
   list-style: none;
+  color: white;
 }

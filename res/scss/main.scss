@@ -1,9 +1,16 @@
 //scss variables
+$header_height: 10vh;
+$footer_height: 5vh;
+$main_height: 100vh - ($header_height + $footer_height);
 
 //scss imports
 @import "scssFiles/header.scss";
 @import "scssFiles/footer.scss";
 @import "scssFiles/landingPage";
+@import "scssFiles/account_select";
+@import "scssFiles/char_overview";
+@import "scssFiles/char_compare";
+
 
 //scss clearfix
 %clearfix {
@@ -31,4 +38,5 @@
   outline: none;
   text-decoration: none;
   list-style: none;
+  color: white;
 }
