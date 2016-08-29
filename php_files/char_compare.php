@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Charakter-Vergleich</title>
+    <title>API-Abfrage</title>
     <link rel="shortcut icon" href="../res/img/favicon.ico">
     <link rel="stylesheet" href="../res/css/main.css" charset="utf-8">
+    <?php require 'variables.php'; session_start();?>
   </head>
   <body>
     <header>
@@ -19,7 +20,7 @@
       </nav>
     </header>
     <main>
-
+      <?php echo $_SESSION['sessionTag']; ?>
     </main>
     <footer>
       <p>©1996 - 2016 Blizzard Entertainment, Inc. All rights reserved.<br>Battle.net, Blizzard Entertainment, Diablo and Reaper of Souls are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>

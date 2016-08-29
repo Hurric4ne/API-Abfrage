@@ -147,6 +147,39 @@ main .account-wrapper {
   border: 1px solid red;
 }
 
+.char-wrapper {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background-color: #cc8800;
+  border-radius: 10px;
+  margin: 50px 0 0 50px;
+}
+
+.char-wrapper hr {
+  margin: 10px 0 10px 0;
+}
+
+.char-wrapper .slot {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.char-wrapper .head-slot {
+  width: 66px;
+  height: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.char-wrapper .shoulder-slot {
+  top: 20%;
+  left: 10%;
+  width: 66px;
+  height: 88px;
+}
+
 header nav ul {
   *zoom: 1;
 }

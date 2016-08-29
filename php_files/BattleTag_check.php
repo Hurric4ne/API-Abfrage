@@ -11,4 +11,9 @@
       echo "Bitte BattleTag eingeben!";
     }
   }
+
+  $BattleTag = str_replace("#","-",$BattleTag);
+  if(strpos($BattleTag,'-') == null && $BattleTag != NULL) {
+    $BattleTag = substr($BattleTag,0,-4).'-'.substr($BattleTag,-4,4);
+  }
 ?>

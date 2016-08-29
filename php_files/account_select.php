@@ -25,14 +25,21 @@
     <main>
       <div class="input-wrapper">
         <form action="account_select.php" method="post">
-          <input type="text" name="BattleTag" placeholder="Hurric4ne#2268" required>
+          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" placeholder="Hurric4ne#2268" required>
           <input type="submit" name="search" value="suchen">
+        </form>
+        <form action="account_select.php" method="post">
+          <input type="submit" name="delete" value="löschen">
         </form>
       </div>
       <div class="account-wrapper">
         <?php
-        include 'BattleTag_check.php';
-        echo $BattleTag;
+        require 'BattleTag_check.php';
+
+        if (isset($_POST['delete'])) {
+          session_unset();
+          header("Refresh:0");
+        }
         ?>
       </div>
     </main>
