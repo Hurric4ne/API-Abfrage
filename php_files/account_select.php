@@ -31,16 +31,16 @@
         <form action="account_select.php" method="post">
           <input type="submit" name="delete" value="löschen">
         </form>
-      </div>
-      <div class="account-wrapper">
         <?php
-        require 'BattleTag_check.php';
-
         if (isset($_POST['delete'])) {
           session_unset();
           header("Refresh:0");
         }
-
+        ?>
+      </div>
+      <div class="account-wrapper">
+        <?php
+        require 'BattleTag_check.php';
         ?>
       </div>
     </main>

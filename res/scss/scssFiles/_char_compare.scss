@@ -1,1 +1,28 @@
-//na
+.compare-wrapper {
+  width: 660px;
+
+  input[name="search"] {
+    margin-right: 15px;
+  }
+}
+
+.table-wrapper {
+  width: 800px;
+  margin: 0 auto;
+
+  table {
+    margin-top: 25px;
+    width: 800px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    td {
+      font-family: 'Diablo3';
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      border: 1px dotted black;
+    }
+  }
+
+}
