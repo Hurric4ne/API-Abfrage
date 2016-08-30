@@ -22,59 +22,72 @@
     <main>
       <div class="char-wrapper">
         <div class="text-wrapper">
-          <p>Charakter-Name: </p>
-          <p>Charakter-Klasse: </p>
+          <ul>
+            <li>Name:</li>
+            <li><?php  echo "Worusk"; ?></li>
+          </ul>
+          <ul>
+            <li>Klasse:</li>
+            <li><?php  echo "Barbar"; ?></li>
+          </ul>
         </div><hr>
 
-        <div class="slot head-slot">
+        <div class="slot-wrapper">
 
-        </div>
+          <div class="slot head-slot">
 
-        <div class="slot shoulder-slot">
+          </div>
 
-        </div>
+          <div class="slot shoulder-slot">
 
-        <div class="slot amulet-slot">
+          </div>
 
-        </div>
+          <div class="slot amulet-slot">
 
-        <div class="slot glove-slot">
+          </div>
 
-        </div>
+          <div class="slot glove-slot">
 
-        <div class="slot chest-slot">
+          </div>
 
-        </div>
+          <div class="slot chest-slot">
 
-        <div class="slot bracer-slot">
+          </div>
 
-        </div>
+          <div class="slot bracer-slot">
 
-        <div class="slot left_ring-slot">
+          </div>
 
-        </div>
+          <div class="slot left_ring-slot">
 
-        <div class="slot belt-slot">
+          </div>
 
-        </div>
+          <div class="slot belt-slot">
 
-        <div class="slot right_ring-slot">
+          </div>
 
-        </div>
+          <div class="slot right_ring-slot">
 
-        <div class="slot pant-slot">
+          </div>
 
-        </div>
+          <div class="slot pants-slot">
 
-        <div class="slot weapon-slot">
+          </div>
 
-        </div>
+          <div class="slot weapon-slot">
 
-        <div class="slot boot-slot">
+          </div>
 
-        </div>
+          <div class="slot boot-slot">
 
-        <div class="slot offhand-slot">
+          </div>
+
+          <div class="slot offhand-slot">
+
+          </div>
+        </div> <!-- slot-wrapper -->
+        <hr>
+        <div class="skill-wrapper">
 
         </div>
       </div>

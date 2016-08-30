@@ -1,6 +1,6 @@
 header {
   width: 100vw;
-  height: 11vh;
+  height: 120px;
   background-color: #808080;
 }
 
@@ -57,15 +57,17 @@ header nav ul .active:hover {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100vw;
-  height: 5vh;
+  height: 55px;
   background: linear-gradient(#9a9a9a, #5a5a5a);
 }
 
 footer p {
   color: white;
   text-align: center;
-  line-height: 2.5vh;
+  line-height: 27.5px;
   font-family: 'Diablo3';
 }
 
@@ -109,18 +111,12 @@ footer p {
   margin-left: 10px;
 }
 
-main {
-  padding: 10px 0 10px 0;
-  height: 84vh;
-  background-color: #d3d3d3;
-}
-
-main .input-wrapper {
+.input-wrapper {
   width: 400px;
   margin: 0 auto;
 }
 
-main .input-wrapper input[name="BattleTag"] {
+.input-wrapper input[name="BattleTag"] {
   height: 35px;
   width: 180px;
   font-size: 20px;
@@ -128,7 +124,7 @@ main .input-wrapper input[name="BattleTag"] {
   border-radius: 5px;
 }
 
-main .input-wrapper input[name="search"] {
+.input-wrapper input[name="search"] {
   margin-left: 15px;
   font-family: 'Diablo3';
   font-weight: bold;
@@ -139,7 +135,7 @@ main .input-wrapper input[name="search"] {
   cursor: pointer;
 }
 
-main .account-wrapper {
+.account-wrapper {
   width: 80vw;
   height: 20vh;
   margin: 0 auto;
@@ -148,36 +144,147 @@ main .account-wrapper {
 }
 
 .char-wrapper {
-  position: relative;
-  width: 400px;
+  width: 350px;
   height: 600px;
   background-color: #cc8800;
   border-radius: 10px;
-  margin: 50px 0 0 50px;
+}
+
+.char-wrapper .text-wrapper {
+  height: 50px;
+  padding-top: 2px;
+}
+
+.char-wrapper .text-wrapper ul {
+  width: 280px;
+  margin: 0 auto;
+  font-family: 'Diablo3';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 0 2px 0;
+  position: relative;
+}
+
+.char-wrapper .text-wrapper ul:last-of-type {
+  margin-top: 25px;
+}
+
+.char-wrapper .text-wrapper ul li {
+  position: absolute;
+  left: 0;
+}
+
+.char-wrapper .text-wrapper ul li:last-of-type {
+  right: 0;
+  text-align: right;
 }
 
 .char-wrapper hr {
   margin: 10px 0 10px 0;
 }
 
-.char-wrapper .slot {
+.char-wrapper .slot-wrapper {
+  width: 350px;
+  height: 430px;
+  position: relative;
+}
+
+.char-wrapper .slot-wrapper .slot {
   position: absolute;
   border: 2px solid black;
   border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.char-wrapper .head-slot {
+.char-wrapper .slot-wrapper .head-slot {
   width: 66px;
   height: 66px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 142px;
 }
 
-.char-wrapper .shoulder-slot {
-  top: 20%;
-  left: 10%;
+.char-wrapper .slot-wrapper .shoulder-slot {
   width: 66px;
   height: 88px;
+  left: 55px;
+  top: 33px;
+}
+
+.char-wrapper .slot-wrapper .amulet-slot {
+  width: 56px;
+  height: 56px;
+  right: 60px;
+  top: 43px;
+}
+
+.char-wrapper .slot-wrapper .glove-slot {
+  width: 66px;
+  height: 88px;
+  left: 40px;
+  top: 133px;
+}
+
+.char-wrapper .slot-wrapper .chest-slot {
+  width: 82px;
+  height: 115px;
+  left: 134px;
+  top: 80px;
+}
+
+.char-wrapper .slot-wrapper .bracer-slot {
+  width: 66px;
+  height: 88px;
+  right: 40px;
+  top: 133px;
+}
+
+.char-wrapper .slot-wrapper .left_ring-slot {
+  width: 42px;
+  height: 42px;
+  left: 50px;
+  top: 230px;
+}
+
+.char-wrapper .slot-wrapper .belt-slot {
+  width: 82px;
+  height: 34px;
+  left: 134px;
+  top: 200px;
+}
+
+.char-wrapper .slot-wrapper .right_ring-slot {
+  width: 42px;
+  height: 42px;
+  right: 50px;
+  top: 230px;
+}
+
+.char-wrapper .slot-wrapper .pants-slot {
+  width: 66px;
+  height: 88px;
+  left: 142px;
+  bottom: 100px;
+}
+
+.char-wrapper .slot-wrapper .weapon-slot {
+  width: 66px;
+  height: 130px;
+  left: 40px;
+  bottom: 15px;
+}
+
+.char-wrapper .slot-wrapper .boot-slot {
+  width: 66px;
+  height: 88px;
+  left: 142px;
+  bottom: 0px;
+}
+
+.char-wrapper .slot-wrapper .offhand-slot {
+  width: 66px;
+  height: 130px;
+  right: 40px;
+  bottom: 15px;
 }
 
 header nav ul {
@@ -205,4 +312,11 @@ header nav ul:after {
   outline: none;
   text-decoration: none;
   list-style: none;
+}
+
+main {
+  height: 900px;
+  width: 100vw;
+  background-color: #d3d3d3;
+  padding: 50px;
 }

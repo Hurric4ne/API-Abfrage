@@ -1,37 +1,31 @@
-main {
-  padding: 10px 0 10px 0;
-  height: $main_height;
-  background-color: #d3d3d3;
+.input-wrapper {
+  width: 400px;
+  margin: 0 auto;
 
-  .input-wrapper {
-    width: 400px;
-    margin: 0 auto;
-
-    input[name="BattleTag"] {
-      height: 35px;
-      width: 180px;
-      font-size: 20px;
-      padding: 5px 0 5px 10px;
-      border-radius: 5px;
-    }
-
-    input[name="search"] {
-      margin-left: 15px;
-      font-family: 'Diablo3';
-      font-weight: bold;
-      height: 35px;
-      width: 120px;
-      font-size: 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+  input[name="BattleTag"] {
+    height: 35px;
+    width: 180px;
+    font-size: 20px;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
   }
 
-  .account-wrapper {
-    width: 80vw;
-    height: 20vh;
-    margin: 0 auto;
-    margin-top: 25px;
-    border: 1px solid red;
+  input[name="search"] {
+    margin-left: 15px;
+    font-family: 'Diablo3';
+    font-weight: bold;
+    height: 35px;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
   }
+}
+
+.account-wrapper {
+  width: 80vw;
+  height: 20vh;
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 1px solid red;
 }

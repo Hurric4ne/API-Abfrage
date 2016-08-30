@@ -1,4 +1,6 @@
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100vw;
   height: $footer_height;
   background: linear-gradient(#9a9a9a, #5a5a5a);

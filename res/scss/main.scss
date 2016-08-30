@@ -1,7 +1,6 @@
 //scss variables
-$header_height: 11vh;
-$footer_height: 5vh;
-$main_height: 100vh - ($header_height + $footer_height);
+$header_height: 120px;
+$footer_height: 55px;
 
 //scss imports
 @import "scssFiles/header.scss";
@@ -38,4 +37,11 @@ $main_height: 100vh - ($header_height + $footer_height);
   outline: none;
   text-decoration: none;
   list-style: none;
+}
+
+main {
+  height: 900px;
+  width: 100vw;
+  background-color: #d3d3d3;
+  padding: 50px;
 }

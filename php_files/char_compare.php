@@ -20,7 +20,6 @@
       </nav>
     </header>
     <main>
-      <?php echo $_SESSION['sessionTag']; ?>
     </main>
     <footer>
       <p>©1996 - 2016 Blizzard Entertainment, Inc. All rights reserved.<br>Battle.net, Blizzard Entertainment, Diablo and Reaper of Souls are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
