@@ -5,7 +5,10 @@
     <title>API-Abfrage</title>
     <link rel="shortcut icon" href="../res/img/favicon.ico">
     <link rel="stylesheet" href="../res/css/main.css" charset="utf-8">
-    <?php require 'variables.php'; ?>
+    <?php
+    require 'variables.php';
+    session_start();
+    ?>
   </head>
   <body>
     <header>
@@ -31,6 +34,11 @@
             <li><?php  echo "Barbar"; ?></li>
           </ul>
         </div><hr>
+        <?php
+          $t = substr($_SERVER['REQUEST_URI'],41);
+          // echo $_SESSION['link_arr'][$t];
+
+        ?>
 
         <div class="slot-wrapper">
 

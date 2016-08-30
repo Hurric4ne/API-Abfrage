@@ -136,6 +136,7 @@ footer p:first-of-type {
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
+  vertical-align: bottom;
 }
 
 .account-wrapper {
@@ -157,8 +158,11 @@ footer p:first-of-type {
   box-shadow: 0 5px 5px -2px black;
 }
 
-.account-wrapper .char img {
+.account-wrapper .char .icon, .account-wrapper .char p, .account-wrapper .char .leaf {
   position: absolute;
+}
+
+.account-wrapper .char .icon {
   left: 10px;
   top: 10px;
   width: 42px;
@@ -166,22 +170,46 @@ footer p:first-of-type {
 }
 
 .account-wrapper .char p {
-  position: absolute;
+  font-family: 'Diablo3';
   font-size: 20px;
+  color: white;
+  text-shadow: 1px 2px black;
   font-weight: bold;
   line-height: 18px;
-  font-family: 'Diablo3';
-  color: white;
   left: 62px;
+}
+
+.account-wrapper .char .name {
   top: 10px;
 }
 
-.account-wrapper .char p:last-of-type {
-  top: 37px;
+.account-wrapper .char .class {
+  top: 40px;
+}
+
+.account-wrapper .char .level {
+  top: 70px;
+}
+
+.account-wrapper .char .plevel {
+  top: 70px;
+  left: 200px;
+  color: #66d9ff;
+  text-shadow: 1px 2px blue;
+}
+
+.account-wrapper .char .leaf {
+  right: -5px;
+  top: 10px;
+  clip: rect(0, 24px, 31px, 0px);
 }
 
 .account-wrapper .hc_char {
   border: 2px solid red;
+}
+
+.account-wrapper .hc_char:hover {
+  content: "test";
 }
 
 .account-wrapper h1 {

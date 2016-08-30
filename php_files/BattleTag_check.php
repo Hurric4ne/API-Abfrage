@@ -16,7 +16,7 @@
   }
 
   if (isset($_SESSION['sessionTag']) || isset($_POST['BattleTag'])) {
-    $request_uri = $url.$BattleTag.$locale.$apikey;
+    $request_uri = $url.$BattleTag.'/'.$locale.$apikey;
     $content_uri = file_get_contents($request_uri);
     $account = json_decode($content_uri, true);
   }
@@ -66,13 +66,26 @@
       } else {
         $char = "char";
       }
+      //css-Klasse für Charakterlevel
+      $char_lvl = $account['heroes'][$i]['level'];
+      //css-Klasse für Paragonlevel
+      $char_plvl = $account['heroes'][$i]['paragonLevel'];
+      //id für charakter
+      $char_id = $account['heroes'][$i]['id'];
+      $char_url = $url.$BattleTag."/hero/".$char_id.$locale.$apikey;
+      $_SESSION['link_arr'][$char_name] = $char_url;
 
       echo "
-      <a href='#'><div class='$char'>
-        <img src='$class_img$icon$gender'/>
-        <p>Name: $char_name</p>
-        <p>Klasse: $char_class</p>
-      </div></a>";
+      <a href='char_overview.php?$char_name'><div class='$char'>
+        <img class='icon' src='$class_img$icon$gender'/>
+        <p class='name'>Name: $char_name</p>
+        <p class='class'>Klasse: $char_class</p>
+        <p class='level'>Level: $char_lvl</p>
+        <p class='plevel'>Paragonstufe: $char_plvl</p>";
+        if ($account['heroes'][$i]['seasonal'] == true) {
+          echo "<img class='leaf' src='$seasonal_leaf' title='seasonaler Charakter'/>";
+        }
+      echo "</div></a>";
     } //for
   } else {
     if (!isset($_POST['BattleTag'])) {
@@ -81,5 +94,4 @@
       echo "<h1>Keine Helden gefunden!</h1>";
     }
   }
-
 ?>
