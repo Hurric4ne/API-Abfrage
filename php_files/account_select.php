@@ -25,7 +25,7 @@
     <main>
       <div class="input-wrapper">
         <form action="account_select.php" method="post">
-          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" placeholder="Hurric4ne#2268" required>
+          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" value="Hurric4ne#2268" required>
           <input type="submit" name="search" value="suchen">
         </form>
         <form action="account_select.php" method="post">
@@ -40,6 +40,7 @@
           session_unset();
           header("Refresh:0");
         }
+
         ?>
       </div>
     </main>

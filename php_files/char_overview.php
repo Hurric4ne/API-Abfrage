@@ -88,8 +88,34 @@
         </div> <!-- slot-wrapper -->
         <hr>
         <div class="skill-wrapper">
+        <?php
+        $skill_arr = ['left_mouse', 'right_mouse', 'skill_1', 'skill_2', 'skill_3', 'skill_4'];
+        for ($i=0; $i < count($skill_arr); $i++) {
+          echo
+            "<a href='#'>
+              <label class=$skill_arr[$i]>
+                <object data='../res/img/skill_default.png' type='image/png'>
+                  <img src='#'/>
+                </object>
+              </label>
+            </a>";
+        }
+        ?>
+        </div> <!-- skill-wrapper -->
 
-        </div>
+        <div class="passive-wrapper">
+          <?php
+            for ($i=1; $i <= 4; $i++) {
+              echo
+              "<a href='#'>
+                <object data='../res/img/skill_default.png' type='image/png'>
+                  <img src='#'/>
+                </object>
+              </a>";
+            }
+          ?>
+        </div> <!-- passive-wrapper -->
+
       </div>
     </main>
     <footer>

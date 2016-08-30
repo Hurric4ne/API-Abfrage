@@ -39,7 +39,7 @@ header {
         &:last-of-type {
           margin-right: 0;
         }
-      }
+      } //a
 
       .active {
         color: lime;
@@ -48,7 +48,7 @@ header {
         &:hover {
           margin-top: 0;
         }
-      }
-    }
-  }
-}
+      } //active
+    } //ul
+  } //nav
+} //header

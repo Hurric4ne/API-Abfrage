@@ -67,8 +67,11 @@ footer {
 footer p {
   color: white;
   text-align: center;
-  line-height: 27.5px;
   font-family: 'Diablo3';
+}
+
+footer p:first-of-type {
+  margin-top: 10px;
 }
 
 .bg {
@@ -118,7 +121,7 @@ footer p {
 
 .input-wrapper input[name="BattleTag"] {
   height: 35px;
-  width: 180px;
+  width: 250px;
   font-size: 20px;
   padding: 5px 0 5px 10px;
   border-radius: 5px;
@@ -136,16 +139,60 @@ footer p {
 }
 
 .account-wrapper {
-  width: 80vw;
-  height: 20vh;
+  width: 1410px;
+  height: 600px;
   margin: 0 auto;
   margin-top: 25px;
-  border: 1px solid red;
+}
+
+.account-wrapper .char {
+  position: relative;
+  float: left;
+  width: 450px;
+  height: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px -2px black;
+}
+
+.account-wrapper .char img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 42px;
+  height: 42px;
+}
+
+.account-wrapper .char p {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  font-family: 'Diablo3';
+  color: white;
+  left: 62px;
+  top: 10px;
+}
+
+.account-wrapper .char p:last-of-type {
+  top: 37px;
+}
+
+.account-wrapper .hc_char {
+  border: 2px solid red;
+}
+
+.account-wrapper h1 {
+  font-family: 'Diablo3';
+  font-weight: bold;
+  text-align: center;
 }
 
 .char-wrapper {
   width: 350px;
-  height: 600px;
+  height: 650px;
   background-color: #cc8800;
   border-radius: 10px;
 }
@@ -184,7 +231,6 @@ footer p {
 }
 
 .char-wrapper .slot-wrapper {
-  width: 350px;
   height: 430px;
   position: relative;
 }
@@ -287,16 +333,90 @@ footer p {
   bottom: 15px;
 }
 
-header nav ul {
+.char-wrapper .skill-wrapper {
+  padding-top: 10px;
+}
+
+.char-wrapper .skill-wrapper a {
+  pointer-events: none;
+  margin: 0 3px 0 9px;
+}
+
+.char-wrapper .skill-wrapper a label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.char-wrapper .skill-wrapper a label:before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("../img/skill-overlays.png");
+}
+
+.char-wrapper .skill-wrapper a label object {
+  border-radius: 5px;
+}
+
+.char-wrapper .skill-wrapper a label object img {
+  width: 42px;
+  height: 42px;
+}
+
+.char-wrapper .skill-wrapper a .left_mouse:before {
+  background-position: 0 -1px;
+}
+
+.char-wrapper .skill-wrapper a .right_mouse:before {
+  background-position: -21px -1px;
+}
+
+.char-wrapper .skill-wrapper a .skill_1:before {
+  background-position: 0 -23px;
+}
+
+.char-wrapper .skill-wrapper a .skill_2:before {
+  background-position: -23px -23px;
+}
+
+.char-wrapper .skill-wrapper a .skill_3:before {
+  background-position: 0 -46px;
+}
+
+.char-wrapper .skill-wrapper a .skill_4:before {
+  background-position: -23px -46px;
+}
+
+.char-wrapper .passive-wrapper {
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.char-wrapper .passive-wrapper a {
+  pointer-events: none;
+  margin: 0 4px 0 8px;
+}
+
+.char-wrapper .passive-wrapper a object {
+  border-radius: 5px;
+}
+
+header nav ul, .account-wrapper {
   *zoom: 1;
 }
 
-header nav ul:before, header nav ul:after {
+header nav ul:before, .account-wrapper:before, header nav ul:after, .account-wrapper:after {
   content: "";
   display: table;
 }
 
-header nav ul:after {
+header nav ul:after, .account-wrapper:after {
   clear: both;
 }
 

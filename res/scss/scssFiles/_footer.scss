@@ -8,7 +8,9 @@ footer {
   p {
     color: white;
     text-align: center;
-    line-height: $footer_height/2;
     font-family: 'Diablo3';
+    &:first-of-type {
+      margin-top: 10px;
+    }
   }
-}
+} //footer
