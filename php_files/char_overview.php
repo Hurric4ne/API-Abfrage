@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="../res/css/main.css" charset="utf-8">
     <script src="../res/javascript/tooltips_overview.js"></script>
     <?php
-    require 'variables.php';
     session_start();
+    require 'variables.php';
+    require 'skills.php';
     ?>
   </head>
   <body>
     <header>
       <h3>Charakter-Übersicht</h3>
       <nav>
-        <ul>
+        <ul class="special">
           <a href="../index.html"><li>Startseite</li></a>
           <a href="account_select.php"><li>Account-Auswahl</li></a>
           <a class="active"><li>Charakter-Übersicht</li></a>
@@ -28,22 +29,21 @@
         <div class="text-wrapper">
           <ul>
             <li>Name:</li>
-            <li><?php  echo "Worusk"; ?></li>
+            <li><?php  echo $char_name; ?></li>
           </ul>
           <ul>
             <li>Klasse:</li>
-            <li><?php  echo "Barbar"; ?></li>
+            <li><?php  echo $char_class; ?></li>
           </ul>
         </div><hr>
-        <?php
-          require 'skills.php';
-          //echo $_SESSION['link_arr'][substr($_SERVER['REQUEST_URI'],41)];
-        ?>
 
         <div class="slot-wrapper">
 
           <div class="slot head-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket middle">
+              </span>
+            </span>
           </div>
 
           <div class="slot shoulder-slot">
@@ -51,7 +51,10 @@
           </div>
 
           <div class="slot amulet-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket middle">
+              </span>
+            </span>
           </div>
 
           <div class="slot glove-slot">
@@ -59,7 +62,14 @@
           </div>
 
           <div class="slot chest-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket top">
+              </span>
+              <span class="socket middle">
+              </span>
+              <span class="socket bottom">
+              </span>
+            </span>
           </div>
 
           <div class="slot bracer-slot">
@@ -67,7 +77,10 @@
           </div>
 
           <div class="slot left_ring-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket middle">
+              </span>
+            </span>
           </div>
 
           <div class="slot belt-slot">
@@ -75,15 +88,26 @@
           </div>
 
           <div class="slot right_ring-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket middle">
+              </span>
+            </span>
           </div>
 
           <div class="slot pants-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket special">
+              </span>
+              <span class="socket special">
+              </span>
+            </span>
           </div>
 
           <div class="slot weapon-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket middle">
+              </span>
+            </span>
           </div>
 
           <div class="slot boot-slot">
@@ -91,7 +115,10 @@
           </div>
 
           <div class="slot offhand-slot">
-
+            <span class="socket-wrapper">
+              <span class="socket middle">
+              </span>
+            </span>
           </div>
         </div> <!-- slot-wrapper -->
         <hr>
@@ -125,7 +152,30 @@
             }
           ?>
         </div> <!-- passive-wrapper -->
-
+      </div> <!-- char-wrapper -->
+      <div class="details-wrapper">
+        <table cellspacing='0'>
+          <tr>
+            <td class="bold">statistische</td>
+            <td class="bold">Werte</td>
+          </tr>
+          <tr>
+            <td>Schaden:</td>
+            <td><?php echo $stat_arr['Schaden']; ?></td>
+          </tr>
+          <tr>
+            <td>Zähigkeit:</td>
+            <td><?php echo $stat_arr['Zähigkeit']; ?></td>
+          </tr>
+          <tr>
+            <td>Erholung:</td>
+            <td><?php echo $stat_arr['Erholung']; ?></td>
+          </tr>
+          <tr>
+            <td>Leben:</td>
+            <td><?php echo $stat_arr['Leben']; ?></td>
+          </tr>
+        </table>
       </div>
     </main>
     <footer>

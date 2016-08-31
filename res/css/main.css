@@ -16,7 +16,7 @@ header nav {
 }
 
 header nav ul {
-  width: 1200px;
+  width: 845px;
   margin: 0 auto;
 }
 
@@ -54,6 +54,10 @@ header nav ul .active {
 
 header nav ul .active:hover {
   margin-top: 0;
+}
+
+header nav .special {
+  width: 1200px;
 }
 
 footer {
@@ -220,6 +224,10 @@ footer p:first-of-type {
   text-align: center;
 }
 
+main {
+  position: relative;
+}
+
 .char-wrapper {
   width: 350px;
   height: 650px;
@@ -273,10 +281,64 @@ footer p:first-of-type {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.char-wrapper .slot-wrapper .slot .socket-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.char-wrapper .slot-wrapper .slot .socket-wrapper .socket {
+  background: url("../img/socket.png") no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 50%;
+  position: absolute;
+}
+
+.char-wrapper .slot-wrapper .slot .socket-wrapper .socket .gem {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+
+.char-wrapper .slot-wrapper .slot .socket-wrapper .top {
+  top: 7.5%;
+  transform: translate(-50%, -7.5%);
+}
+
+.char-wrapper .slot-wrapper .slot .socket-wrapper .middle {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.char-wrapper .slot-wrapper .slot .socket-wrapper .bottom {
+  top: 93.5%;
+  transform: translate(-50%, -93.5%);
+}
+
+.char-wrapper .slot-wrapper .slot .socket-wrapper .special {
+  top: 17%;
+  transform: translate(-50%, -17%);
+}
+
+.char-wrapper .slot-wrapper .slot .socket-wrapper .special:last-of-type {
+  top: 83%;
+  transform: translate(-50%, -83%);
+}
+
 .char-wrapper .slot-wrapper .head-slot {
   width: 66px;
   height: 66px;
   left: 142px;
+}
+
+.char-wrapper .slot-wrapper .head-slot .socket {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .char-wrapper .slot-wrapper .shoulder-slot {
@@ -428,6 +490,30 @@ footer p:first-of-type {
   width: 42px;
   height: 42px;
   background: url("../img/skill-default.png");
+}
+
+.details-wrapper {
+  position: absolute;
+  width: 350px;
+  height: 160px;
+  border: 2px solid black;
+  left: 500px;
+  top: 50px;
+  border-radius: 10px;
+  font-size: 26px;
+  font-family: 'Diablo3';
+}
+
+.details-wrapper .bold {
+  font-weight: bold;
+}
+
+.details-wrapper th {
+  padding: 5px 0 5px 10px;
+}
+
+.details-wrapper td:nth-of-type(even) {
+  text-align: right;
 }
 
 .compare-wrapper {

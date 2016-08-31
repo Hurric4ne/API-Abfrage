@@ -1,3 +1,6 @@
+main {
+  position: relative;
+}
 .char-wrapper {
   width: 350px;
   height: 650px;
@@ -47,12 +50,65 @@
       border-radius: 5px;
       background-color: rgba(0,0,0,0.33);
       box-shadow: inset 0 2px 2px rgba(0,0,0,0.5);
+
+      .socket-wrapper {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        .socket {
+          background: url("../img/socket.png") no-repeat;
+          width: 32px;
+          height: 32px;
+          left: 50%;
+          position: absolute;
+
+          .gem {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .top {
+          top: 7.5%;
+          transform: translate(-50%, -7.5%);
+        }
+
+        .middle {
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .bottom {
+          top: 93.5%;
+          transform: translate(-50%, -93.5%);
+        }
+
+        .special {
+          top: 17%;
+          transform: translate(-50%, -17%);
+          &:last-of-type {
+            top: 83%;
+            transform: translate(-50%, -83%);
+          }
+        }
+      }
     }
 
     .head-slot {
       width: 66px;
       height: 66px;
       left: 175px - 33px;
+
+      .socket {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     .shoulder-slot {
@@ -199,5 +255,29 @@
         background: url("../img/skill-default.png");
       }
     }
-  }
+  } //passive-wrapper
 } //char-wrapper
+
+.details-wrapper {
+  position: absolute;
+  width: 350px;
+  height: 160px;
+  border: 2px solid black;
+  left: 500px;
+  top: 50px;
+  border-radius: 10px;
+  font-size: 26px;
+  font-family: 'Diablo3';
+
+  .bold {
+    font-weight: bold;
+  }
+
+  th {
+    padding: 5px 0 5px 10px;
+  }
+
+  td:nth-of-type(even) {
+    text-align: right;
+  }
+} //details-wrapper

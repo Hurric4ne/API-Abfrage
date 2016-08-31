@@ -14,7 +14,7 @@ header {
     margin-top: 10px;
 
     ul {
-      width: 1200px;
+      width: 845px;
       margin: 0 auto;
       @extend %clearfix;
 
@@ -50,5 +50,9 @@ header {
         }
       } //active
     } //ul
+
+    .special {
+      width: 1200px;
+    }
   } //nav
 } //header

@@ -14,7 +14,6 @@
         <ul>
           <a href="../index.html"><li>Startseite</li></a>
           <a href="account_select.php"><li>Account-Auswahl</li></a>
-          <a href="char_overview.php"><li>Charakter-Übersicht</li></a>
           <a class="active"><li>Charakter-Vergleich</li></a>
         </ul>
       </nav>
