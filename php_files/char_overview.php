@@ -5,6 +5,7 @@
     <title>API-Abfrage</title>
     <link rel="shortcut icon" href="../res/img/favicon.ico">
     <link rel="stylesheet" href="../res/css/main.css" charset="utf-8">
+    <script src="../res/javascript/tooltips_overview.js"></script>
     <?php
     require 'variables.php';
     session_start();
@@ -35,9 +36,8 @@
           </ul>
         </div><hr>
         <?php
-          $t = substr($_SERVER['REQUEST_URI'],41);
-          // echo $_SESSION['link_arr'][$t];
-
+          require 'skills.php';
+          //echo $_SESSION['link_arr'][substr($_SERVER['REQUEST_URI'],41)];
         ?>
 
         <div class="slot-wrapper">
@@ -97,28 +97,30 @@
         <hr>
         <div class="skill-wrapper">
         <?php
-        $skill_arr = ['left_mouse', 'right_mouse', 'skill_1', 'skill_2', 'skill_3', 'skill_4'];
-        for ($i=0; $i < count($skill_arr); $i++) {
-          echo
-            "<a href='#'>
-              <label class=$skill_arr[$i]>
-                <object data='../res/img/skill_default.png' type='image/png'>
-                  <img src='#'/>
-                </object>
-              </label>
-            </a>";
-        }
+          $skill_arr = ['left_mouse', 'right_mouse', 'skill_1', 'skill_2', 'skill_3', 'skill_4'];
+          for ($i=0; $i < count($skill_arr); $i++) {
+            echo
+              "<a href='$activetips_arr[$i]'>
+                <label class=$skill_arr[$i]>";
+                if ($skillactive_arr[$i] != null) {
+                  echo "<img src='$skillactive_arr[$i]'/>";
+                }
+                echo "</label>
+              </a>";
+          }
         ?>
         </div> <!-- skill-wrapper -->
 
         <div class="passive-wrapper">
           <?php
-            for ($i=1; $i <= 4; $i++) {
+            for ($i=0; $i<=3; $i++) {
               echo
-              "<a href='#'>
-                <object data='../res/img/skill_default.png' type='image/png'>
-                  <img src='#'/>
-                </object>
+              "<a href='$passivetips_arr[$i]'>
+                <label>";
+                if ($skillpassive_arr[$i] != null) {
+                  echo "<img src='$skillpassive_arr[$i]'/>";
+                }
+                echo "</label>
               </a>";
             }
           ?>

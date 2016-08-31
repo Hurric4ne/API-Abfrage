@@ -1,0 +1,570 @@
+{
+  "battleTag" : "megalomon#2727",
+  "paragonLevel" : 704,
+  "paragonLevelHardcore" : 95,
+  "paragonLevelSeason" : 132,
+  "paragonLevelSeasonHardcore" : 0,
+  "guildName" : "Draconier",
+  "heroes" : [ {
+    "id" : 36253184,
+    "name" : "Megalomon",
+    "class" : "demon-hunter",
+    "gender" : 0,
+    "level" : 70,
+    "kills" : {
+      "elites" : 13152
+    },
+    "paragonLevel" : 132,
+    "hardcore" : false,
+    "seasonal" : true,
+    "dead" : false,
+    "last-updated" : 1471317324
+  }, {
+    "id" : 54704966,
+    "name" : "Schnoesi",
+    "class" : "monk",
+    "gender" : 0,
+    "level" : 70,
+    "kills" : {
+      "elites" : 12292
+    },
+    "paragonLevel" : 704,
+    "hardcore" : false,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1428673541
+  }, {
+    "id" : 58462300,
+    "name" : "Liz",
+    "class" : "demon-hunter",
+    "gender" : 1,
+    "level" : 70,
+    "kills" : {
+      "elites" : 8893
+    },
+    "paragonLevel" : 704,
+    "hardcore" : false,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1440780951
+  }, {
+    "id" : 67249222,
+    "name" : "HEINRICH",
+    "class" : "barbarian",
+    "gender" : 1,
+    "level" : 70,
+    "kills" : {
+      "elites" : 4317
+    },
+    "paragonLevel" : 704,
+    "hardcore" : false,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1453650113
+  }, {
+    "id" : 47749721,
+    "name" : "Neralta",
+    "class" : "wizard",
+    "gender" : 1,
+    "level" : 70,
+    "kills" : {
+      "elites" : 3298
+    },
+    "paragonLevel" : 704,
+    "hardcore" : false,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1421781575
+  }, {
+    "id" : 66634598,
+    "name" : "NeinTAUSEND",
+    "class" : "witch-doctor",
+    "gender" : 0,
+    "level" : 70,
+    "kills" : {
+      "elites" : 1397
+    },
+    "paragonLevel" : 95,
+    "hardcore" : true,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1444503184
+  }, {
+    "id" : 67676006,
+    "name" : "Naddalya",
+    "class" : "demon-hunter",
+    "gender" : 1,
+    "level" : 70,
+    "kills" : {
+      "elites" : 222
+    },
+    "paragonLevel" : 704,
+    "hardcore" : false,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1444321998
+  }, {
+    "id" : 73114799,
+    "name" : "Verstorben",
+    "class" : "wizard",
+    "gender" : 0,
+    "level" : 70,
+    "kills" : {
+      "elites" : 294
+    },
+    "paragonLevel" : 95,
+    "hardcore" : true,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1454622087
+  }, {
+    "id" : 73220505,
+    "name" : "Hämmerli",
+    "class" : "crusader",
+    "gender" : 0,
+    "level" : 70,
+    "kills" : {
+      "elites" : 346
+    },
+    "paragonLevel" : 704,
+    "hardcore" : false,
+    "seasonal" : false,
+    "dead" : false,
+    "last-updated" : 1454446357
+  } ],
+  "lastHeroPlayed" : 36253184,
+  "lastUpdated" : 1471884912,
+  "kills" : {
+    "monsters" : 1636273,
+    "elites" : 103453,
+    "hardcoreMonsters" : 97645
+  },
+  "highestHardcoreLevel" : 70,
+  "timePlayed" : {
+    "barbarian" : 0.153,
+    "crusader" : 0.037,
+    "demon-hunter" : 1.0,
+    "monk" : 0.423,
+    "witch-doctor" : 0.077,
+    "wizard" : 0.169
+  },
+  "progression" : {
+    "act1" : true,
+    "act2" : true,
+    "act3" : true,
+    "act4" : true,
+    "act5" : true
+  },
+  "fallenHeroes" : [ {
+    "name" : "Verstorben",
+    "level" : 49,
+    "stats" : {
+      "life" : 0,
+      "damage" : 5532.23,
+      "toughness" : 106754.0,
+      "healing" : 3226.92,
+      "armor" : 0,
+      "strength" : 56,
+      "dexterity" : 56,
+      "vitality" : 1467,
+      "intelligence" : 1686,
+      "physicalResist" : 0,
+      "fireResist" : 216,
+      "coldResist" : 271,
+      "lightningResist" : 216,
+      "poisonResist" : 252,
+      "arcaneResist" : 216,
+      "damageIncrease" : 0.0,
+      "critChance" : 0.0,
+      "damageReduction" : 0.0
+    },
+    "items" : {
+      "head" : {
+        "id" : "WizardHat_102",
+        "name" : "Machtquell",
+        "icon" : "wizardhat_102_demonhunter_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkwI6MDEggUSBwgEFUCtpGgdpQSSDh1EST4FHRCMwRwd7MkmBh1JwelBHfAYoOAiCwgBFXlCAwAYECAMMIkSOPYCQABID1AQYOADkAECGIC1pYoNUARYAg",
+        "dyeColor" : {
+          "item" : {
+            "id" : "Dye_05",
+            "name" : "Kardinalfärbemittel",
+            "icon" : "dye_05_demonhunter_male",
+            "displayColor" : "white",
+            "tooltipParams" : "item/cardinal-dye"
+          }
+        }
+      },
+      "torso" : {
+        "id" : "Unique_Chest_101_x1",
+        "name" : "Shi Mizus Haori",
+        "icon" : "unique_chest_101_x1_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/CnAI--DL5gcSBwgEFYbkvlAdNwVCVh2aJS8rHb0OGDEddCjasB0VR8rCMIsSOOUCQABQElgEYLsDaisKDAgAEIGxtOaBgICAMxIbCIaP74IPEgcIBBX1ntirMI8SOABAAVgEkAECgAEskAECtQHrHRlgGIyS94sKUARYAg"
+      },
+      "feet" : {
+        "id" : "Boots_006",
+        "name" : "Landstreicherkonklave",
+        "icon" : "boots_006_wizard_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkQImI3ilwsSBwgEFRw9m38d6OLkBR3rApRcHZN1834dm8BhjSILCAEVikIDABgMIAwwjxI4pQNAAEgBUAxYBGCUBJABAhi49Nn5D1AEWAI",
+        "dyeColor" : {
+          "item" : {
+            "id" : "Dye_20",
+            "name" : "Abyssisches Färbemittel",
+            "icon" : "dye_20_demonhunter_male",
+            "displayColor" : "white",
+            "tooltipParams" : "item/abyssal-dye"
+          }
+        }
+      },
+      "hands" : {
+        "id" : "Gloves_102",
+        "name" : "Herrschaftliche Träger",
+        "icon" : "gloves_102_wizard_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkII2tOQyAMSBwgEFYJXkqQd04-jXB3scAetHZQGAMsdKbLA1SILCAAVzv4BABgQIAQwiRI4pANAAEgTUAxg_gOQAQIY-6HttgtQBFgC",
+        "dyeColor" : {
+          "item" : {
+            "id" : "Dye_08",
+            "name" : "Wüstenfärbemittel",
+            "icon" : "dye_08_demonhunter_male",
+            "displayColor" : "white",
+            "tooltipParams" : "item/desert-dye"
+          }
+        }
+      },
+      "shoulders" : {
+        "id" : "Shoulders_103",
+        "name" : "Wachenbeute",
+        "icon" : "shoulders_103_wizard_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkQIvfKC4AYSBwgEFYz0yBUd1JFtPR1hGoVhHXxZu6sdScHpQSILCAEVdkIDABgKIAgwjxI4wwNAAEgSUAxYBGC1BJABAhiY0sfcAlAEWAI",
+        "dyeColor" : {
+          "item" : {
+            "id" : "Dye_01",
+            "name" : "Gerberfärbemittel",
+            "icon" : "dye_01_demonhunter_male",
+            "displayColor" : "white",
+            "tooltipParams" : "item/tanners-dye"
+          }
+        }
+      },
+      "legs" : {
+        "id" : "Pants_103",
+        "name" : "Silbernes Gestell",
+        "icon" : "pants_103_wizard_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/Cp4BCPqD44oBEgcIBBVZjtWlHV03H8wd1JFtPR1vi3fwHVlEzkQiCwgAFa3-AQAYDCAMMI8SOPgDQABIClAMWARg8ARqKwoMCAAQrrG05oGAgIAzEhsIvqKohQwSBwgEFWEnlLEwjxI4AEABWASQAQJqKwoMCAAQ0qu05oGAgIAzEhsIjs-DowoSBwgEFWAnlLEwixI4AEABWASQAQKQAQIYzcbTogtQBFgC",
+        "dyeColor" : {
+          "item" : {
+            "id" : "Dye_15",
+            "name" : "Seefahrerfärbemittel",
+            "icon" : "dye_15_demonhunter_male",
+            "displayColor" : "white",
+            "tooltipParams" : "item/mariners-dye"
+          }
+        }
+      },
+      "bracers" : {
+        "id" : "Unique_Bracer_004_x1",
+        "name" : "Die ruhige Hand",
+        "icon" : "unique_bracer_004_x1_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/CkgI_9yJlgYSBwgEFQA1Bzcdb4t38B0Oo43EHTx1eQUd1CpQBB3UkW09HdOPo1wwixI4swFAAFASWARghwKAASOQAQK1AZMoyssYgNS58AZQBFgC"
+      },
+      "mainHand" : {
+        "id" : "Wand_105",
+        "name" : "Hervorrufungsschramme",
+        "icon" : "wand_105_demonhunter_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkAIwejOwgoSBwgEFR_wSAUdFK72xR0bNx_MHe1wB60d8Big4CILCAEVbUIDABgCIBYwiRI41AJAAFAMYP8CkAECGL7Ax1RQBFgC"
+      },
+      "offHand" : {
+        "id" : "Unique_Orb_103_x1",
+        "name" : "Licht der Gnade",
+        "icon" : "unique_orb_103_x1_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/CkMIouD82AYSBwgEFVS7yKcd7YavMR1Tq44sHezJJgYd7LPvcx3scAetMIsSOJ4CQABQElgEYP4CgAEjkAECtQGUv45xGNeSuoMLUARYAg"
+      },
+      "waist" : {
+        "id" : "Belt_104",
+        "name" : "Bundneid",
+        "icon" : "belt_104_wizard_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkAI5KzYiA8SBwgEFXujQtQdFUfKwh18WburHbFvPcodb4t38CILCAEVdkIDABgIICAwiRI42gNAAFAMYJQEkAECGIny6rsFUARYAg"
+      },
+      "rightFinger" : {
+        "id" : "Ring_11",
+        "name" : "Loyalitätsnarbe",
+        "icon" : "ring_11_demonhunter_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkUIxo3ViAcSBwgEFRFVXUQdk3Xzfh2HYBBEHesClFwdxtz-7B1JwelBIgsIARWKQgMAGAQgHDCJEjiJAkAAUA5g5gKQAQIYotTqxQhQBFgC"
+      },
+      "leftFinger" : {
+        "id" : "Ring_16",
+        "name" : "Geschwindes Siegel",
+        "icon" : "ring_16_demonhunter_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/CkoI-9abqwISBwgEFRZVXUQdu6ts9R3UlMUJHdOPo1wdfFm7qx3MPwC8Hc2SQj0iCwgAFbj-AQAYHCAAMIkSOMADQABQEGD3A5ABAhis1OrFCFAEWAI"
+      },
+      "neck" : {
+        "id" : "Unique_Amulet_003_x1",
+        "name" : "Mondlichtschutz",
+        "icon" : "unique_amulet_003_x1_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/CkIIyMuBVBIHCAQVOLkHWx3iyLGbHevJJgYdS0ZamB2S2kbXHSgw5vEwixI4lQJAAFASWARg9AKAARyQAQK1AY3FRGQY8OS9sAtQBFgC"
+      }
+    },
+    "kills" : {
+      "elites" : 396
+    },
+    "hardcore" : true,
+    "death" : {
+      "killer" : 6035,
+      "time" : 1427139207,
+      "location" : 288454
+    },
+    "heroId" : 57473830,
+    "gender" : 1,
+    "class" : "wizard"
+  } ],
+  "blacksmith" : {
+    "slug" : "blacksmith",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "jeweler" : {
+    "slug" : "jeweler",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "mystic" : {
+    "slug" : "mystic",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "blacksmithHardcore" : {
+    "slug" : "blacksmith",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "jewelerHardcore" : {
+    "slug" : "jeweler",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "mysticHardcore" : {
+    "slug" : "mystic",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "blacksmithSeason" : {
+    "slug" : "blacksmith",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "jewelerSeason" : {
+    "slug" : "jeweler",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "mysticSeason" : {
+    "slug" : "mystic",
+    "level" : 12,
+    "stepCurrent" : 0,
+    "stepMax" : 1
+  },
+  "seasonalProfiles" : {
+    "season4" : {
+      "seasonId" : 4,
+      "paragonLevel" : 622,
+      "paragonLevelHardcore" : 66,
+      "kills" : {
+        "monsters" : 196455,
+        "elites" : 12222,
+        "hardcoreMonsters" : 28617
+      },
+      "timePlayed" : {
+        "barbarian" : 0.02,
+        "crusader" : 0.014,
+        "demon-hunter" : 1.0,
+        "monk" : 0.0,
+        "witch-doctor" : 0.147,
+        "wizard" : 0.0
+      },
+      "highestHardcoreLevel" : 70,
+      "progression" : {
+        "act1" : false,
+        "act2" : false,
+        "act3" : false,
+        "act4" : false,
+        "act5" : false
+      }
+    },
+    "season3" : {
+      "seasonId" : 3,
+      "paragonLevel" : 419,
+      "paragonLevelHardcore" : 0,
+      "kills" : {
+        "monsters" : 171345,
+        "elites" : 10087,
+        "hardcoreMonsters" : 2847
+      },
+      "timePlayed" : {
+        "barbarian" : 0.041,
+        "crusader" : 0.032,
+        "demon-hunter" : 1.0,
+        "monk" : 0.0,
+        "witch-doctor" : 0.019,
+        "wizard" : 0.044
+      },
+      "highestHardcoreLevel" : 20,
+      "progression" : {
+        "act1" : false,
+        "act2" : false,
+        "act3" : false,
+        "act4" : false,
+        "act5" : false
+      }
+    },
+    "season5" : {
+      "seasonId" : 5,
+      "paragonLevel" : 523,
+      "paragonLevelHardcore" : 70,
+      "kills" : {
+        "monsters" : 52707,
+        "elites" : 5273,
+        "hardcoreMonsters" : 3019
+      },
+      "timePlayed" : {
+        "barbarian" : 1.0,
+        "crusader" : 0.067,
+        "demon-hunter" : 0.199,
+        "monk" : 0.0,
+        "witch-doctor" : 0.0,
+        "wizard" : 0.069
+      },
+      "highestHardcoreLevel" : 70,
+      "progression" : {
+        "act1" : false,
+        "act2" : false,
+        "act3" : false,
+        "act4" : false,
+        "act5" : false
+      }
+    },
+    "season7" : {
+      "seasonId" : 7,
+      "paragonLevel" : 132,
+      "paragonLevelHardcore" : 0,
+      "kills" : {
+        "monsters" : 6689,
+        "elites" : 443,
+        "hardcoreMonsters" : 0
+      },
+      "timePlayed" : {
+        "barbarian" : 0.0,
+        "crusader" : 0.0,
+        "demon-hunter" : 1.0,
+        "monk" : 0.0,
+        "witch-doctor" : 0.0,
+        "wizard" : 0.0
+      },
+      "highestHardcoreLevel" : 0,
+      "progression" : {
+        "act1" : false,
+        "act2" : false,
+        "act3" : false,
+        "act4" : false,
+        "act5" : false
+      }
+    },
+    "season0" : {
+      "seasonId" : 0,
+      "paragonLevel" : 704,
+      "paragonLevelHardcore" : 95,
+      "kills" : {
+        "monsters" : 930011,
+        "elites" : 59157,
+        "hardcoreMonsters" : 50753
+      },
+      "timePlayed" : {
+        "barbarian" : 0.121,
+        "crusader" : 0.038,
+        "demon-hunter" : 1.0,
+        "monk" : 0.333,
+        "witch-doctor" : 0.076,
+        "wizard" : 0.132
+      },
+      "highestHardcoreLevel" : 70,
+      "progression" : {
+        "act1" : false,
+        "act2" : false,
+        "act3" : false,
+        "act4" : false,
+        "act5" : false
+      }
+    },
+    "season1" : {
+      "seasonId" : 1,
+      "paragonLevel" : 129,
+      "paragonLevelHardcore" : 0,
+      "kills" : {
+        "monsters" : 35532,
+        "elites" : 3298,
+        "hardcoreMonsters" : 0
+      },
+      "timePlayed" : {
+        "barbarian" : 0.0,
+        "crusader" : 0.0,
+        "demon-hunter" : 0.0,
+        "monk" : 0.0,
+        "witch-doctor" : 0.0,
+        "wizard" : 1.0
+      },
+      "highestHardcoreLevel" : 0,
+      "progression" : {
+        "act1" : true,
+        "act2" : true,
+        "act3" : true,
+        "act4" : true,
+        "act5" : true
+      }
+    },
+    "season2" : {
+      "seasonId" : 2,
+      "paragonLevel" : 352,
+      "paragonLevelHardcore" : 0,
+      "kills" : {
+        "monsters" : 243534,
+        "elites" : 12973,
+        "hardcoreMonsters" : 12409
+      },
+      "timePlayed" : {
+        "barbarian" : 0.0,
+        "crusader" : 0.0,
+        "demon-hunter" : 0.043,
+        "monk" : 1.0,
+        "witch-doctor" : 0.0,
+        "wizard" : 0.048
+      },
+      "highestHardcoreLevel" : 49,
+      "progression" : {
+        "act1" : true,
+        "act2" : true,
+        "act3" : true,
+        "act4" : true,
+        "act5" : true
+      }
+    }
+  }
+}

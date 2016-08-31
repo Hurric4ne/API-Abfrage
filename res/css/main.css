@@ -192,8 +192,10 @@ footer p:first-of-type {
 }
 
 .account-wrapper .char .plevel {
+  width: 240px;
   top: 70px;
-  left: 200px;
+  left: 195px;
+  text-align: right;
   color: #66d9ff;
   text-shadow: 1px 2px blue;
 }
@@ -366,14 +368,15 @@ footer p:first-of-type {
 }
 
 .char-wrapper .skill-wrapper a {
-  pointer-events: none;
   margin: 0 3px 0 9px;
 }
 
 .char-wrapper .skill-wrapper a label {
-  cursor: pointer;
+  width: 42px;
+  height: 42px;
   display: inline-block;
   position: relative;
+  background: url("../img/skill-default.png");
 }
 
 .char-wrapper .skill-wrapper a label:before {
@@ -385,15 +388,6 @@ footer p:first-of-type {
   width: 20px;
   height: 20px;
   background: url("../img/skill-overlays.png");
-}
-
-.char-wrapper .skill-wrapper a label object {
-  border-radius: 5px;
-}
-
-.char-wrapper .skill-wrapper a label object img {
-  width: 42px;
-  height: 42px;
 }
 
 .char-wrapper .skill-wrapper a .left_mouse:before {
@@ -427,12 +421,13 @@ footer p:first-of-type {
 }
 
 .char-wrapper .passive-wrapper a {
-  pointer-events: none;
   margin: 0 4px 0 8px;
 }
 
-.char-wrapper .passive-wrapper a object {
-  border-radius: 5px;
+.char-wrapper .passive-wrapper a img {
+  width: 42px;
+  height: 42px;
+  background: url("../img/skill-default.png");
 }
 
 .compare-wrapper {

@@ -73,11 +73,11 @@
       //id für charakter
       $char_id = $account['heroes'][$i]['id'];
       $char_url = $url.$BattleTag."/hero/".$char_id.$locale.$apikey;
-      $_SESSION['link_arr'][$char_name] = $char_url;
+      $_SESSION['link_arr'][$char_id] = $char_url;
 
       echo "
-      <a href='char_overview.php?$char_name'><div class='$char'>
-        <img class='icon' src='$class_img$icon$gender'/>
+      <a href='char_overview.php?$char_id'><div class='$char'>
+        <img class='icon' src='$class_icon$icon$gender'/>
         <p class='name'>Name: $char_name</p>
         <p class='class'>Klasse: $char_class</p>
         <p class='level'>Level: $char_lvl</p>

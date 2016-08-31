@@ -144,13 +144,14 @@
     padding-top: 10px;
 
     a {
-      pointer-events: none;
       margin: 0 3px 0 9px;
 
       label {
-        cursor: pointer;
+        width: 42px;
+        height: 42px;
         display: inline-block;
         position: relative;
+        background: url("../img/skill-default.png");
         &:before {
           position: absolute;
           content: "";
@@ -160,14 +161,6 @@
           width: 20px;
           height: 20px;
           background: url("../img/skill-overlays.png");
-        }
-        object {
-          border-radius: 5px;
-
-          img {
-            width: 42px;
-            height: 42px;
-          }
         }
       } //label
 
@@ -198,11 +191,12 @@
     margin-top: 15px;
 
     a {
-      pointer-events: none;
       margin: 0 4px 0 8px;
 
-      object {
-        border-radius: 5px;
+      img {
+        width: 42px;
+        height: 42px;
+        background: url("../img/skill-default.png");
       }
     }
   }
