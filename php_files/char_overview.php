@@ -39,86 +39,130 @@
 
         <div class="slot-wrapper">
 
-          <div class="slot head-slot">
-            <span class="socket-wrapper">
+          <div class="slot head-slot <?php echo $char_decode['items']['head']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['head']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['head']['icon'].'.png';?>" />
+              </span>
               <span class="socket middle">
               </span>
-            </span>
+            </a>
           </div>
 
-          <div class="slot shoulder-slot">
-
+          <div class="slot shoulders-slot <?php echo $char_decode['items']['shoulders']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['shoulders']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['shoulders']['icon'].'.png';?>" />
+              </span>
+            </a>
           </div>
 
-          <div class="slot amulet-slot">
-            <span class="socket-wrapper">
+          <div class="slot neck-slot <?php echo $char_decode['items']['neck']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['neck']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['neck']['icon'].'.png';?>" />
+              </span>
               <span class="socket middle">
               </span>
-            </span>
+            </a>
           </div>
 
-          <div class="slot glove-slot">
-
+          <div class="slot hands-slot <?php echo $char_decode['items']['hands']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['hands']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['hands']['icon'].'.png';?>" />
+              </span>
+            </a>
           </div>
 
-          <div class="slot chest-slot">
-            <span class="socket-wrapper">
+          <div class="slot torso-slot <?php echo $char_decode['items']['torso']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['torso']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['torso']['icon'].'.png';?>" />
+              </span>
               <span class="socket top">
               </span>
               <span class="socket middle">
               </span>
               <span class="socket bottom">
               </span>
-            </span>
+            </a>
           </div>
 
-          <div class="slot bracer-slot">
-
+          <div class="slot bracers-slot <?php echo $char_decode['items']['bracers']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['bracers']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['bracers']['icon'].'.png';?>" />
+              </span>
+            </a>
           </div>
 
-          <div class="slot left_ring-slot">
-            <span class="socket-wrapper">
+          <div class="slot leftFinger-slot <?php echo $char_decode['items']['leftFinger']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['leftFinger']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['leftFinger']['icon'].'.png';?>" />
+              </span>
               <span class="socket middle">
               </span>
-            </span>
+            </a>
           </div>
 
-          <div class="slot belt-slot">
-
+          <div class="slot waist-slot <?php echo $char_decode['items']['waist']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['waist']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['waist']['icon'].'.png';?>" />
+              </span>
+            </a>
           </div>
 
-          <div class="slot right_ring-slot">
-            <span class="socket-wrapper">
+          <div class="slot rightFinger-slot <?php echo $char_decode['items']['rightFinger']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['rightFinger']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['rightFinger']['icon'].'.png';?>" />
+              </span>
               <span class="socket middle">
               </span>
-            </span>
+            </a>
           </div>
 
-          <div class="slot pants-slot">
-            <span class="socket-wrapper">
+          <div class="slot legs-slot <?php echo $char_decode['items']['legs']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['legs']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['legs']['icon'].'.png';?>" />
+              </span>
               <span class="socket special">
               </span>
               <span class="socket special">
               </span>
-            </span>
+            </a>
           </div>
 
-          <div class="slot weapon-slot">
-            <span class="socket-wrapper">
+          <div class="slot mainHand-slot <?php echo $char_decode['items']['mainHand']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['mainHand']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['mainHand']['icon'].'.png';?>" />
+              </span>
               <span class="socket middle">
               </span>
-            </span>
+            </a>
           </div>
 
-          <div class="slot boot-slot">
-
+          <div class="slot feet-slot <?php echo $char_decode['items']['feet']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['feet']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['feet']['icon'].'.png';?>" />
+              </span>
+            </a>
           </div>
 
-          <div class="slot offhand-slot">
-            <span class="socket-wrapper">
+          <div class="slot offHand-slot <?php echo $char_decode['items']['offHand']['displayColor'];?>">
+            <a href="<?php echo $item_url.$char_decode['items']['offHand']['tooltipParams'];?>">
+              <span class="img-wrap">
+                <img src="<?php echo $item_icon.$char_decode['items']['offHand']['icon'].'.png';?>" />
+              </span>
               <span class="socket middle">
               </span>
-            </span>
+            </a>
           </div>
         </div> <!-- slot-wrapper -->
         <hr>

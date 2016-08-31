@@ -39,7 +39,7 @@
       </div>
       <div class="account-wrapper">
         <?php
-        require 'BattleTag_check.php';
+        require 'char_request.php';
         ?>
       </div>
     </main>

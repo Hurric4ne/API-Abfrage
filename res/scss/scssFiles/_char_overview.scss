@@ -3,8 +3,8 @@ main {
 }
 .char-wrapper {
   width: 350px;
-  height: 650px;
-  background-color: #cc8800;
+  height: 670px;
+  background-color: #404040;
   border-radius: 10px;
 
   .text-wrapper {
@@ -15,6 +15,7 @@ main {
       width: 280px;
       margin: 0 auto;
       font-family: 'Diablo3';
+      color: white;
       font-size: 20px;
       font-weight: bold;
       padding: 2px 0 2px 0;
@@ -40,6 +41,10 @@ main {
     margin: 10px 0 10px 0;
   }
 
+  hr:first-of-type {
+    margin: 10px 0 30px 0;
+  }
+
   .slot-wrapper {
     height: 430px;
     position: relative;
@@ -51,17 +56,27 @@ main {
       background-color: rgba(0,0,0,0.33);
       box-shadow: inset 0 2px 2px rgba(0,0,0,0.5);
 
-      .socket-wrapper {
+      a {
         width: 100%;
         height: 100%;
         display: block;
 
+        .img-wrap {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          img {
+            position: relative;
+          }
+        }
+
         .socket {
+          position: absolute;
           background: url("../img/socket.png") no-repeat;
           width: 32px;
           height: 32px;
           left: 50%;
-          position: absolute;
 
           .gem {
             position: absolute;
@@ -71,7 +86,7 @@ main {
             width: 20px;
             height: 20px;
           }
-        }
+        } //socket
 
         .top {
           top: 7.5%;
@@ -96,6 +111,22 @@ main {
             transform: translate(-50%, -83%);
           }
         }
+      } //a
+    } //slot
+
+    .green {
+      background: linear-gradient(#006600, #33cc33);
+      border: 2px solid #748e3d;
+      &:hover {
+        border: 2px solid #87a73d;
+      }
+    }
+
+    .orange {
+      background: linear-gradient(#996600, #ff9900);
+      border: 2px solid #b07b38;
+      &:hover {
+        border: 2px solid #c29337;
       }
     }
 
@@ -104,6 +135,10 @@ main {
       height: 66px;
       left: 175px - 33px;
 
+      img {
+        top: -31px;
+      }
+
       .socket {
         left: 50%;
         top: 50%;
@@ -111,88 +146,138 @@ main {
       }
     }
 
-    .shoulder-slot {
+    .shoulders-slot {
       width: 66px;
       height: 88px;
       left: 55px;
       top: 33px;
+
+      img {
+        top: -20px;
+      }
     }
 
-    .amulet-slot {
+    .neck-slot {
       width: 56px;
       height: 56px;
       right: 60px;
       top: 43px;
+
+      img {
+        width: 52px;
+        height: 52px;
+        top: 1px;
+      }
     }
 
-    .glove-slot {
+    .hands-slot {
       width: 66px;
       height: 88px;
       left: 40px;
       top: 133px;
+
+      img {
+        top: -20px;
+      }
     }
 
-    .chest-slot {
+    .torso-slot {
       width: 82px;
       height: 115px;
-      left: 175px - 41px;
+      left: 134px;
       top: 80px;
+
+      img {
+        top: -25px;
+        left: -1px;
+      }
     }
 
-    .bracer-slot {
+    .bracers-slot {
       width: 66px;
       height: 88px;
       right: 40px;
       top: 133px;
+
+      img {
+        top: -20px;
+      }
     }
 
-    .left_ring-slot {
+    .leftFinger-slot {
       width: 42px;
       height: 42px;
       left: 50px;
       top: 230px;
+
+      img {
+        left: -12px;
+        top: -12px;
+      }
     }
 
-    .belt-slot {
+    .waist-slot {
       width: 82px;
       height: 34px;
       left: 175px - 41px;
       top: 200px;
+
+      img {
+        left: 7px;
+        top: -15px;
+      }
     }
 
-    .right_ring-slot {
+    .rightFinger-slot {
       width: 42px;
       height: 42px;
       right: 50px;
       top: 230px;
+
+      img {
+        left: -12px;
+        top: -12px;
+      }
     }
 
-    .pants-slot {
+    .legs-slot {
       width: 66px;
       height: 88px;
       left: 175px - 33px;
       bottom: 100px;
+
+      img {
+        top: -20px;
+      }
     }
 
-    .weapon-slot {
+    .mainHand-slot {
       width: 66px;
       height: 130px;
       left: 40px;
       bottom: 15px;
     }
 
-    .boot-slot {
+    .feet-slot {
       width: 66px;
       height: 88px;
       left: 175px - 33px;
       bottom: 0px;
+
+      img {
+        top: -20px;
+      }
     }
 
-    .offhand-slot {
+    .offHand-slot {
       width: 66px;
       height: 130px;
       right: 40px;
       bottom: 15px;
+
+      img {
+        top: 1px;
+      }
     }
   } //slot-wrapper
 

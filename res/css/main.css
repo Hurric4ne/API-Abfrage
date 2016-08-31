@@ -30,12 +30,6 @@ header nav ul a {
   box-shadow: 0px 7px 5px -3px black;
   padding: 5px 7px 5px 7px;
   margin: 0 10px 0 10px;
-  transition: all .5s ease;
-}
-
-header nav ul a:hover {
-  transition: all .5s ease;
-  margin-top: 5px;
 }
 
 header nav ul a:first-of-type {
@@ -230,8 +224,8 @@ main {
 
 .char-wrapper {
   width: 350px;
-  height: 650px;
-  background-color: #cc8800;
+  height: 670px;
+  background-color: #404040;
   border-radius: 10px;
 }
 
@@ -244,6 +238,7 @@ main {
   width: 280px;
   margin: 0 auto;
   font-family: 'Diablo3';
+  color: white;
   font-size: 20px;
   font-weight: bold;
   padding: 2px 0 2px 0;
@@ -268,6 +263,10 @@ main {
   margin: 10px 0 10px 0;
 }
 
+.char-wrapper hr:first-of-type {
+  margin: 10px 0 30px 0;
+}
+
 .char-wrapper .slot-wrapper {
   height: 430px;
   position: relative;
@@ -281,21 +280,31 @@ main {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper {
+.char-wrapper .slot-wrapper .slot a {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper .socket {
+.char-wrapper .slot-wrapper .slot a .img-wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.char-wrapper .slot-wrapper .slot a .img-wrap img {
+  position: relative;
+}
+
+.char-wrapper .slot-wrapper .slot a .socket {
+  position: absolute;
   background: url("../img/socket.png") no-repeat;
   width: 32px;
   height: 32px;
   left: 50%;
-  position: absolute;
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper .socket .gem {
+.char-wrapper .slot-wrapper .slot a .socket .gem {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -304,29 +313,47 @@ main {
   height: 20px;
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper .top {
+.char-wrapper .slot-wrapper .slot a .top {
   top: 7.5%;
   transform: translate(-50%, -7.5%);
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper .middle {
+.char-wrapper .slot-wrapper .slot a .middle {
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper .bottom {
+.char-wrapper .slot-wrapper .slot a .bottom {
   top: 93.5%;
   transform: translate(-50%, -93.5%);
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper .special {
+.char-wrapper .slot-wrapper .slot a .special {
   top: 17%;
   transform: translate(-50%, -17%);
 }
 
-.char-wrapper .slot-wrapper .slot .socket-wrapper .special:last-of-type {
+.char-wrapper .slot-wrapper .slot a .special:last-of-type {
   top: 83%;
   transform: translate(-50%, -83%);
+}
+
+.char-wrapper .slot-wrapper .green {
+  background: linear-gradient(#006600, #33cc33);
+  border: 2px solid #748e3d;
+}
+
+.char-wrapper .slot-wrapper .green:hover {
+  border: 2px solid #87a73d;
+}
+
+.char-wrapper .slot-wrapper .orange {
+  background: linear-gradient(#996600, #ff9900);
+  border: 2px solid #b07b38;
+}
+
+.char-wrapper .slot-wrapper .orange:hover {
+  border: 2px solid #c29337;
 }
 
 .char-wrapper .slot-wrapper .head-slot {
@@ -335,94 +362,148 @@ main {
   left: 142px;
 }
 
+.char-wrapper .slot-wrapper .head-slot img {
+  top: -31px;
+}
+
 .char-wrapper .slot-wrapper .head-slot .socket {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.char-wrapper .slot-wrapper .shoulder-slot {
+.char-wrapper .slot-wrapper .shoulders-slot {
   width: 66px;
   height: 88px;
   left: 55px;
   top: 33px;
 }
 
-.char-wrapper .slot-wrapper .amulet-slot {
+.char-wrapper .slot-wrapper .shoulders-slot img {
+  top: -20px;
+}
+
+.char-wrapper .slot-wrapper .neck-slot {
   width: 56px;
   height: 56px;
   right: 60px;
   top: 43px;
 }
 
-.char-wrapper .slot-wrapper .glove-slot {
+.char-wrapper .slot-wrapper .neck-slot img {
+  width: 52px;
+  height: 52px;
+  top: 1px;
+}
+
+.char-wrapper .slot-wrapper .hands-slot {
   width: 66px;
   height: 88px;
   left: 40px;
   top: 133px;
 }
 
-.char-wrapper .slot-wrapper .chest-slot {
+.char-wrapper .slot-wrapper .hands-slot img {
+  top: -20px;
+}
+
+.char-wrapper .slot-wrapper .torso-slot {
   width: 82px;
   height: 115px;
   left: 134px;
   top: 80px;
 }
 
-.char-wrapper .slot-wrapper .bracer-slot {
+.char-wrapper .slot-wrapper .torso-slot img {
+  top: -25px;
+  left: -1px;
+}
+
+.char-wrapper .slot-wrapper .bracers-slot {
   width: 66px;
   height: 88px;
   right: 40px;
   top: 133px;
 }
 
-.char-wrapper .slot-wrapper .left_ring-slot {
+.char-wrapper .slot-wrapper .bracers-slot img {
+  top: -20px;
+}
+
+.char-wrapper .slot-wrapper .leftFinger-slot {
   width: 42px;
   height: 42px;
   left: 50px;
   top: 230px;
 }
 
-.char-wrapper .slot-wrapper .belt-slot {
+.char-wrapper .slot-wrapper .leftFinger-slot img {
+  left: -12px;
+  top: -12px;
+}
+
+.char-wrapper .slot-wrapper .waist-slot {
   width: 82px;
   height: 34px;
   left: 134px;
   top: 200px;
 }
 
-.char-wrapper .slot-wrapper .right_ring-slot {
+.char-wrapper .slot-wrapper .waist-slot img {
+  left: 7px;
+  top: -15px;
+}
+
+.char-wrapper .slot-wrapper .rightFinger-slot {
   width: 42px;
   height: 42px;
   right: 50px;
   top: 230px;
 }
 
-.char-wrapper .slot-wrapper .pants-slot {
+.char-wrapper .slot-wrapper .rightFinger-slot img {
+  left: -12px;
+  top: -12px;
+}
+
+.char-wrapper .slot-wrapper .legs-slot {
   width: 66px;
   height: 88px;
   left: 142px;
   bottom: 100px;
 }
 
-.char-wrapper .slot-wrapper .weapon-slot {
+.char-wrapper .slot-wrapper .legs-slot img {
+  top: -20px;
+}
+
+.char-wrapper .slot-wrapper .mainHand-slot {
   width: 66px;
   height: 130px;
   left: 40px;
   bottom: 15px;
 }
 
-.char-wrapper .slot-wrapper .boot-slot {
+.char-wrapper .slot-wrapper .feet-slot {
   width: 66px;
   height: 88px;
   left: 142px;
   bottom: 0px;
 }
 
-.char-wrapper .slot-wrapper .offhand-slot {
+.char-wrapper .slot-wrapper .feet-slot img {
+  top: -20px;
+}
+
+.char-wrapper .slot-wrapper .offHand-slot {
   width: 66px;
   height: 130px;
   right: 40px;
   bottom: 15px;
+}
+
+.char-wrapper .slot-wrapper .offHand-slot img {
+  top: 1px;
 }
 
 .char-wrapper .skill-wrapper {
