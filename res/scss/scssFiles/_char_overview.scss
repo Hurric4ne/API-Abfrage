@@ -88,22 +88,25 @@ main {
           }
         } //socket
 
-        .top {
-          top: 7.5%;
-          transform: translate(-50%, -7.5%);
-        }
-
-        .middle {
+        .middle_socket {
           top: 50%;
           transform: translate(-50%, -50%);
         }
 
-        .bottom {
-          top: 93.5%;
-          transform: translate(-50%, -93.5%);
+        .torso_socket {
+          top: 7.5%;
+          transform: translate(-50%, -7.5%);
+          &:nth-of-type(2) {  
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+          &:last-of-type {
+            top: 92.5%;
+            transform: translate(-50%, -92.5%);
+          }
         }
 
-        .special {
+        .legs_socket {
           top: 17%;
           transform: translate(-50%, -17%);
           &:last-of-type {
@@ -191,6 +194,7 @@ main {
         width: 82px;
         height: 115px;
         text-align: center;
+        overflow: hidden;
 
         img {
           top: -20px;
@@ -353,7 +357,7 @@ main {
 .details-wrapper {
   position: absolute;
   width: 375px;
-  height: 275px;
+  height: 300px;
   border: 2px solid black;
   left: 500px;
   top: 50px;
@@ -361,20 +365,18 @@ main {
   font-size: 26px;
   font-family: 'Diablo3';
 
-  .bold {
-    font-weight: bold;
-  }
-
-  th {
-    padding: 5px 0 5px 10px;
-  }
-
   td {
     vertical-align: bottom;
-    height: 40px;
-
+    padding-top: 15px;
     &:nth-of-type(even) {
       text-align: right;
     }
+  }
+
+  .bold {
+    text-align: center !important;
+    padding-top: 5px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
   }
 } //details-wrapper

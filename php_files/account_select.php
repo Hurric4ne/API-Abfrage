@@ -39,7 +39,7 @@
       </div>
       <div class="account-wrapper">
         <?php
-        require 'char_request.php';
+        require 'acc_request.php';
         ?>
       </div>
     </main>

@@ -313,27 +313,32 @@ main {
   height: 20px;
 }
 
-.char-wrapper .slot-wrapper .slot a .top {
-  top: 7.5%;
-  transform: translate(-50%, -7.5%);
-}
-
-.char-wrapper .slot-wrapper .slot a .middle {
+.char-wrapper .slot-wrapper .slot a .middle_socket {
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.char-wrapper .slot-wrapper .slot a .bottom {
-  top: 93.5%;
-  transform: translate(-50%, -93.5%);
+.char-wrapper .slot-wrapper .slot a .torso_socket {
+  top: 7.5%;
+  transform: translate(-50%, -7.5%);
 }
 
-.char-wrapper .slot-wrapper .slot a .special {
+.char-wrapper .slot-wrapper .slot a .torso_socket:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.char-wrapper .slot-wrapper .slot a .torso_socket:last-of-type {
+  top: 92.5%;
+  transform: translate(-50%, -92.5%);
+}
+
+.char-wrapper .slot-wrapper .slot a .legs_socket {
   top: 17%;
   transform: translate(-50%, -17%);
 }
 
-.char-wrapper .slot-wrapper .slot a .special:last-of-type {
+.char-wrapper .slot-wrapper .slot a .legs_socket:last-of-type {
   top: 83%;
   transform: translate(-50%, -83%);
 }
@@ -418,6 +423,7 @@ main {
   width: 82px;
   height: 115px;
   text-align: center;
+  overflow: hidden;
 }
 
 .char-wrapper .slot-wrapper .torso-slot .img-wrap img {
@@ -583,7 +589,7 @@ main {
 .details-wrapper {
   position: absolute;
   width: 375px;
-  height: 275px;
+  height: 300px;
   border: 2px solid black;
   left: 500px;
   top: 50px;
@@ -592,21 +598,20 @@ main {
   font-family: 'Diablo3';
 }
 
-.details-wrapper .bold {
-  font-weight: bold;
-}
-
-.details-wrapper th {
-  padding: 5px 0 5px 10px;
-}
-
 .details-wrapper td {
   vertical-align: bottom;
-  height: 40px;
+  padding-top: 15px;
 }
 
 .details-wrapper td:nth-of-type(even) {
   text-align: right;
+}
+
+.details-wrapper .bold {
+  text-align: center !important;
+  padding-top: 5px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
 }
 
 .compare-wrapper {

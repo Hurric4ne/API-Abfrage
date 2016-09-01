@@ -9,7 +9,7 @@
     <?php
     session_start();
     require 'variables.php';
-    require 'skills.php';
+    require 'char_request.php';
     ?>
   </head>
   <body>
@@ -44,8 +44,11 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['head']['icon'].'.png';?>" />
               </span>
-              <span class="socket middle">
-              </span>
+              <?php
+                for ($i=0; $i < $socket_arr[0]; $i++) {
+                  echo "<span class='socket middle_socket'></span>";
+                }
+               ?>
             </a>
           </div>
 
@@ -62,8 +65,11 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['neck']['icon'].'.png';?>" />
               </span>
-              <span class="socket middle">
-              </span>
+              <?php
+                for ($i=0; $i < $socket_arr[1]; $i++) {
+                  echo "<span class='socket middle_socket'></span>";
+                }
+               ?>
             </a>
           </div>
 
@@ -80,12 +86,11 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['torso']['icon'].'.png';?>" />
               </span>
-              <span class="socket top">
-              </span>
-              <span class="socket middle">
-              </span>
-              <span class="socket bottom">
-              </span>
+              <?php
+                for ($i=0; $i < $socket_arr[2]; $i++) {
+                  echo "<span class='socket torso_socket'></span>";
+                }
+              ?>
             </a>
           </div>
 
@@ -102,8 +107,11 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['leftFinger']['icon'].'.png';?>" />
               </span>
-              <span class="socket middle">
-              </span>
+              <?php
+                for ($i=0; $i < $socket_arr[3]; $i++) {
+                  echo "<span class='socket middle_socket'></span>";
+                }
+               ?>
             </a>
           </div>
 
@@ -120,8 +128,11 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['rightFinger']['icon'].'.png';?>" />
               </span>
-              <span class="socket middle">
-              </span>
+              <?php
+                for ($i=0; $i < $socket_arr[4]; $i++) {
+                  echo "<span class='socket middle_socket'></span>";
+                }
+               ?>
             </a>
           </div>
 
@@ -130,10 +141,11 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['legs']['icon'].'.png';?>" />
               </span>
-              <span class="socket special">
-              </span>
-              <span class="socket special">
-              </span>
+              <?php
+                for ($i=0; $i < $socket_arr[5]; $i++) {
+                  echo "<span class='socket legs_socket'></span>";
+                }
+               ?>
             </a>
           </div>
 
@@ -142,8 +154,11 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['mainHand']['icon'].'.png';?>" />
               </span>
-              <span class="socket middle">
-              </span>
+              <?php
+                for ($i=0; $i < $socket_arr[6]; $i++) {
+                  echo "<span class='socket middle_socket'></span>";
+                }
+               ?>
             </a>
           </div>
 
@@ -160,8 +175,13 @@
               <span class="img-wrap">
                 <img src="<?php echo $item_icon.$char_decode['items']['offHand']['icon'].'.png';?>" />
               </span>
-              <span class="socket middle">
-              </span>
+              <?php
+              if ($mainHand_decode['type']['twoHanded'] == false) {
+                for ($i=0; $i < $socket_arr[7]; $i++) {
+                  echo "<span class='socket middle_socket'></span>";
+                }
+              }
+               ?>
             </a>
           </div>
         </div> <!-- slot-wrapper -->
