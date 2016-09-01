@@ -52,5 +52,6 @@
     'Schaden' => $char_decode['stats']['damage'],
     'Zähigkeit' => $char_decode['stats']['toughness'],
     'Erholung' => $char_decode['stats']['healing'],
-    'Leben' => $char_decode['stats']['life']);
+    'Leben' => $char_decode['stats']['life'],
+    'Elitekills' => $char_decode['kills']['elites']);
 ?>

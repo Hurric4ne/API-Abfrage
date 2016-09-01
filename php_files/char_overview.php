@@ -219,6 +219,10 @@
             <td>Leben:</td>
             <td><?php echo $stat_arr['Leben']; ?></td>
           </tr>
+          <tr>
+            <td>getötete Elitegegner:</td>
+            <td><?php echo $stat_arr['Elitekills']; ?></td>
+          </tr>
         </table>
       </div>
     </main>
