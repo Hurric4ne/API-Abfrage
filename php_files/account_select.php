@@ -24,7 +24,11 @@
     <main>
       <div class="input-wrapper">
         <form action="account_select.php" method="post">
-          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" value="Hurric4ne#2268" required>
+          <select name="continent" required>
+            <option value="eu">Europa</option>
+            <option value="us">Amerika</option>
+          </select>
+          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" value="Quin69#1336" required>
           <input type="submit" name="search" value="suchen">
         </form>
         <form action="account_select.php" method="post">
@@ -39,7 +43,7 @@
       </div>
       <div class="account-wrapper">
         <?php
-        require 'acc_request.php';
+          require 'acc_request.php';
         ?>
       </div>
     </main>

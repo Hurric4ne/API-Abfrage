@@ -40,11 +40,11 @@
         <div class="slot-wrapper">
 
           <div class="slot head-slot <?php echo $char_decode['items']['head']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['head']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['head']['icon'].'.png';?>" />
-              </span>
-              <?php
+            <?php if (isset($char_decode['items']['head'])) {
+              echo "<a href=".$item_url.$char_decode['items']['head']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['head']['icon'].".png>";
+                echo "</span>";
                 if (isset($socket_arr[0])) {
                   for ($i=0; $i < $socket_arr[0]; $i++) {
                     echo "<span class='socket middle_socket'></span>";
@@ -53,50 +53,54 @@
                     }
                   }
                 }
-              ?>
-            </a>
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot shoulders-slot <?php echo $char_decode['items']['shoulders']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['shoulders']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['shoulders']['icon'].'.png';?>" />
-              </span>
-            </a>
+            <?php if (isset($char_decode['items']['shoulders'])) {
+              echo "<a href=".$item_url.$char_decode['items']['shoulders']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['shoulders']['icon'].".png>";
+                echo "</span>";
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot neck-slot <?php echo $char_decode['items']['neck']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['neck']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['neck']['icon'].'.png';?>" />
-              </span>
-              <?php
-                if (isset($socket_arr[1])) {
-                  for ($i=0; $i < $socket_arr[1]; $i++) {
-                    echo "<span class='socket middle_socket'></span>";
-                    if (isset($neck_decode['gems'][0])) {
-                      echo "<img class='gem' src='$neck_gem'/>";
+            <?php if(isset($char_decode['items']['neck'])){
+              echo "<a href=".$item_url.$char_decode['items']['neck']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['neck']['icon'].".png>";
+                echo "</span>";
+                  if (isset($socket_arr[1])) {
+                    for ($i=0; $i < $socket_arr[1]; $i++) {
+                      echo "<span class='socket middle_socket'></span>";
+                      if (isset($neck_decode['gems'][0])) {
+                        echo "<img class='gem' src='$neck_gem'/>";
+                      }
                     }
                   }
-                }
-              ?>
-            </a>
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot hands-slot <?php echo $char_decode['items']['hands']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['hands']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['hands']['icon'].'.png';?>" />
-              </span>
-            </a>
+            <?php if (isset($char_decode['items']['hands'])) {
+              echo "<a href=".$item_url.$char_decode['items']['hands']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['hands']['icon'].".png>";
+                echo "</span>";
+              echo "</a>";
+            } ?>
           </div>
 
           <div class="slot torso-slot <?php echo $char_decode['items']['torso']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['torso']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['torso']['icon'].'.png';?>" />
-              </span>
-              <?php
+            <?php if(isset($char_decode['items']['torso'])) {
+              echo "<a href=".$item_url.$char_decode['items']['torso']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['torso']['icon'].".png>";
+                echo "</span>";
                 if (isset($socket_arr[2])) {
                   for ($i=0; $i < $socket_arr[2]; $i++) {
                     echo "<span class='socket torso_socket'></span>";
@@ -105,24 +109,26 @@
                     }
                   }
                 }
-              ?>
-            </a>
+              echo "</a>";
+            } ?>
           </div>
 
           <div class="slot bracers-slot <?php echo $char_decode['items']['bracers']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['bracers']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['bracers']['icon'].'.png';?>" />
-              </span>
-            </a>
+            <?php if (isset($char_decode['items']['bracers'])) {
+              echo "<a href=".$item_url.$char_decode['items']['bracers']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['bracers']['icon'].".png>";
+                echo "</span>";
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot leftFinger-slot <?php echo $char_decode['items']['leftFinger']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['leftFinger']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['leftFinger']['icon'].'.png';?>" />
-              </span>
-              <?php
+            <?php if (isset($char_decode['items']['leftFinger'])) {
+              echo "<a href=".$item_url.$char_decode['items']['leftFinger']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['leftFinger']['icon'].".png>";
+                echo "</span>";
                 if (isset($socket_arr[3])) {
                   for ($i=0; $i < $socket_arr[3]; $i++) {
                     echo "<span class='socket middle_socket'></span>";
@@ -131,24 +137,26 @@
                     }
                   }
                 }
-              ?>
-            </a>
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot waist-slot <?php echo $char_decode['items']['waist']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['waist']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['waist']['icon'].'.png';?>" />
-              </span>
-            </a>
+            <?php if (isset($char_decode['items']['waist'])) {
+              echo "<a href=".$item_url.$char_decode['items']['waist']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['waist']['icon'].".png>";
+                echo "</span>";
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot rightFinger-slot <?php echo $char_decode['items']['rightFinger']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['rightFinger']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['rightFinger']['icon'].'.png';?>" />
-              </span>
-              <?php
+            <?php if (isset($char_decode['items']['rightFinger'])) {
+              echo "<a href=".$item_url.$char_decode['items']['rightFinger']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['rightFinger']['icon'].".png>";
+                echo "</span>";
                 if (isset($socket_arr[4])) {
                   for ($i=0; $i < $socket_arr[4]; $i++) {
                     echo "<span class='socket middle_socket'></span>";
@@ -157,16 +165,16 @@
                     }
                   }
                 }
-              ?>
-            </a>
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot legs-slot <?php echo $char_decode['items']['legs']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['legs']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['legs']['icon'].'.png';?>" />
-              </span>
-              <?php
+            <?php if(isset($char_decode['items']['legs'])) {
+              echo "<a href=".$item_url.$char_decode['items']['legs']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['legs']['icon'].".png>";
+                echo "</span>";
                 if (isset($socket_arr[5])) {
                   for ($i=0; $i < $socket_arr[5]; $i++) {
                     echo "<span class='socket legs_socket'></span>";
@@ -175,16 +183,16 @@
                     }
                   }
                 }
-              ?>
-            </a>
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot mainHand-slot <?php echo $char_decode['items']['mainHand']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['mainHand']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['mainHand']['icon'].'.png';?>" />
-              </span>
-              <?php
+            <?php if (isset($char_decode['items']['mainHand'])) {
+              echo "<a href=".$item_url.$char_decode['items']['mainHand']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['mainHand']['icon'].".png>";
+                echo "</span>";
                 if (isset($socket_arr[6])) {
                   for ($i=0; $i < $socket_arr[6]; $i++) {
                     echo "<span class='socket middle_socket'></span>";
@@ -193,24 +201,26 @@
                     }
                   }
                 }
-              ?>
-            </a>
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot feet-slot <?php echo $char_decode['items']['feet']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['feet']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['feet']['icon'].'.png';?>" />
-              </span>
-            </a>
+            <?php if(isset($char_decode['items']['feet'])) {
+              echo "<a href=".$item_url.$char_decode['items']['feet']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['feet']['icon'].".png>";
+                echo "</span>";
+              echo "</a>";
+            }?>
           </div>
 
           <div class="slot offHand-slot <?php echo $char_decode['items']['offHand']['displayColor'];?>">
-            <a href="<?php echo $item_url.$char_decode['items']['offHand']['tooltipParams'];?>">
-              <span class="img-wrap">
-                <img src="<?php echo $item_icon.$char_decode['items']['offHand']['icon'].'.png';?>" />
-              </span>
-              <?php
+            <?php if(isset($char_decode['items']['offHand'])) {
+              echo "<a href=".$item_url.$char_decode['items']['offHand']['tooltipParams'].">";
+                echo "<span class='img-wrap'>";
+                  echo "<img src=".$item_icon.$char_decode['items']['offHand']['icon'].".png>";
+                echo "</span>";
                 if (isset($socket_arr[7])) {
                   for ($i=0; $i < $socket_arr[7]; $i++) {
                     echo "<span class='socket middle_socket'></span>";
@@ -219,8 +229,8 @@
                     }
                   }
                 }
-              ?>
-            </a>
+              echo "</a>";
+            }?>
           </div>
         </div> <!-- slot-wrapper -->
         <hr>
@@ -228,14 +238,15 @@
           <?php
             $skill_arr = ['left_mouse', 'right_mouse', 'skill_1', 'skill_2', 'skill_3', 'skill_4'];
             for ($i=0; $i < count($skill_arr); $i++) {
-              echo
-                "<a href='$activetips_arr[$i]'>
-                  <label class=$skill_arr[$i]>";
-                  if ($skillactive_arr[$i] != null) {
-                    echo "<img src='$skillactive_arr[$i]'/>";
-                  }
-                  echo "</label>
-                </a>";
+              echo "<div class='active'>";
+                echo "<a href='$activetips_arr[$i]'>";
+                  echo "<label class=$skill_arr[$i]>";
+                    if ($skillactive_arr[$i] != null) {
+                      echo "<img src='$skillactive_arr[$i]'/>";
+                    }
+                  echo "</label>";
+                echo "</a>";
+              echo "</div>";
             }
           ?>
         </div> <!-- skill-wrapper -->
@@ -243,14 +254,15 @@
         <div class="passive-wrapper">
           <?php
             for ($i=0; $i<=3; $i++) {
-              echo
-              "<a href='$passivetips_arr[$i]'>
-                <label>";
-                if ($skillpassive_arr[$i] != null) {
-                  echo "<img src='$skillpassive_arr[$i]'/>";
-                }
-                echo "</label>
-              </a>";
+              echo "<div class='passive'>";
+                echo "<a href='$passivetips_arr[$i]'>";
+                  echo "<label>";
+                    if ($skillpassive_arr[$i] != null) {
+                      echo "<img src='$skillpassive_arr[$i]'/>";
+                    }
+                  echo "</label>";
+                echo "</a>";
+              echo "</div>";
             }
           ?>
         </div> <!-- passive-wrapper -->

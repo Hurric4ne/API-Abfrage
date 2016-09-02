@@ -1,6 +1,12 @@
 <?php
   require 'variables.php';
 
+  if (isset($_POST['continent'])) {
+    if ($_POST['continent'] == "us") {
+      $continent = "https://us.";
+    }
+  }
+
   if (isset($_SESSION['sessionTag']) && !isset($_POST['BattleTag'])) {
     $BattleTag = $_SESSION['sessionTag'];
   } else {
@@ -16,7 +22,7 @@
   }
 
   if (isset($_SESSION['sessionTag']) || isset($_POST['BattleTag'])) {
-    $request_uri = $api_profile.$BattleTag.'/'.$locale.$apikey;
+    $request_uri = $continent.$api_profile.$BattleTag.'/'.$locale.$apikey;
     $content_uri = file_get_contents($request_uri);
     $account = json_decode($content_uri, true);
   }
@@ -72,7 +78,7 @@
       $char_plvl = $account['heroes'][$i]['paragonLevel'];
       //id für charakter
       $char_id = $account['heroes'][$i]['id'];
-      $char_url = $api_profile.$BattleTag."/hero/".$char_id.$locale.$apikey;
+      $char_url = $continent.$api_profile.$BattleTag."/hero/".$char_id.$locale.$apikey;
       $_SESSION['link_arr'][$char_id] = $char_url;
 
       echo "

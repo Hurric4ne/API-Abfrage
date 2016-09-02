@@ -563,19 +563,22 @@ main {
   padding-top: 10px;
 }
 
-.char-wrapper .skill-wrapper a {
-  margin: 0 3px 0 9px;
+.char-wrapper .skill-wrapper .active {
+  float: left;
+  width: 42px;
+  height: 42px;
+  margin-left: 14px;
+  background: url("../img/skill-default.png");
 }
 
-.char-wrapper .skill-wrapper a label {
+.char-wrapper .skill-wrapper .active a label {
   width: 42px;
   height: 42px;
   display: inline-block;
   position: relative;
-  background: url("../img/skill-default.png");
 }
 
-.char-wrapper .skill-wrapper a label:before {
+.char-wrapper .skill-wrapper .active a label:before {
   position: absolute;
   content: "";
   top: -5px;
@@ -586,27 +589,27 @@ main {
   background: url("../img/skill-overlays.png");
 }
 
-.char-wrapper .skill-wrapper a .left_mouse:before {
+.char-wrapper .skill-wrapper .active a .left_mouse:before {
   background-position: 0 -1px;
 }
 
-.char-wrapper .skill-wrapper a .right_mouse:before {
+.char-wrapper .skill-wrapper .active a .right_mouse:before {
   background-position: -21px -1px;
 }
 
-.char-wrapper .skill-wrapper a .skill_1:before {
+.char-wrapper .skill-wrapper .active a .skill_1:before {
   background-position: 0 -23px;
 }
 
-.char-wrapper .skill-wrapper a .skill_2:before {
+.char-wrapper .skill-wrapper .active a .skill_2:before {
   background-position: -23px -23px;
 }
 
-.char-wrapper .skill-wrapper a .skill_3:before {
+.char-wrapper .skill-wrapper .active a .skill_3:before {
   background-position: 0 -46px;
 }
 
-.char-wrapper .skill-wrapper a .skill_4:before {
+.char-wrapper .skill-wrapper .active a .skill_4:before {
   background-position: -23px -46px;
 }
 
@@ -616,14 +619,17 @@ main {
   margin-top: 15px;
 }
 
-.char-wrapper .passive-wrapper a {
-  margin: 0 4px 0 8px;
-}
-
-.char-wrapper .passive-wrapper a img {
+.char-wrapper .passive-wrapper .passive {
+  float: left;
   width: 42px;
   height: 42px;
+  margin: 0 7px 0 8px;
   background: url("../img/skill-default.png");
+}
+
+.char-wrapper .passive-wrapper .passive a img {
+  width: 42px;
+  height: 42px;
 }
 
 .details-wrapper {
@@ -682,16 +688,16 @@ main {
   border: 1px dotted black;
 }
 
-header nav ul, .account-wrapper {
+header nav ul, .account-wrapper, .char-wrapper .skill-wrapper, .char-wrapper .passive-wrapper {
   *zoom: 1;
 }
 
-header nav ul:before, .account-wrapper:before, header nav ul:after, .account-wrapper:after {
+header nav ul:before, .account-wrapper:before, .char-wrapper .skill-wrapper:before, .char-wrapper .passive-wrapper:before, header nav ul:after, .account-wrapper:after, .char-wrapper .skill-wrapper:after, .char-wrapper .passive-wrapper:after {
   content: "";
   display: table;
 }
 
-header nav ul:after, .account-wrapper:after {
+header nav ul:after, .account-wrapper:after, .char-wrapper .skill-wrapper:after, .char-wrapper .passive-wrapper:after {
   clear: both;
 }
 

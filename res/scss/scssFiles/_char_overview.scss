@@ -332,63 +332,77 @@ main {
 
   .skill-wrapper {
     padding-top: 10px;
+    @extend %clearfix;
 
-    a {
-      margin: 0 3px 0 9px;
+    .active {
+      float: left;
+      width: 42px;
+      height: 42px;
+      margin-left: 14px;
+      background: url("../img/skill-default.png");
 
-      label {
-        width: 42px;
-        height: 42px;
-        display: inline-block;
-        position: relative;
-        background: url("../img/skill-default.png");
-        &:before {
-          position: absolute;
-          content: "";
-          top: -5px;
-          left: 0px;
-          transform: translateX(-50%);
-          width: 20px;
-          height: 20px;
-          background: url("../img/skill-overlays.png");
+      a {
+
+        label {
+          width: 42px;
+          height: 42px;
+          display: inline-block;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: "";
+            top: -5px;
+            left: 0px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: url("../img/skill-overlays.png");
+          }
+        } //label
+
+        .left_mouse:before {
+          background-position: 0 -1px;
         }
-      } //label
-
-      .left_mouse:before {
-        background-position: 0 -1px;
-      }
-      .right_mouse:before {
-        background-position: -21px -1px;
-      }
-      .skill_1:before {
-        background-position: 0 -23px;
-      }
-      .skill_2:before {
-        background-position: -23px -23px;
-      }
-      .skill_3:before {
-        background-position: 0 -46px;
-      }
-      .skill_4:before {
-        background-position: -23px -46px;
-      }
-    } //a
+        .right_mouse:before {
+          background-position: -21px -1px;
+        }
+        .skill_1:before {
+          background-position: 0 -23px;
+        }
+        .skill_2:before {
+          background-position: -23px -23px;
+        }
+        .skill_3:before {
+          background-position: 0 -46px;
+        }
+        .skill_4:before {
+          background-position: -23px -46px;
+        }
+      } //a
+    } //skill
   } //skill-wrapper
 
   .passive-wrapper {
     width: 230px;
     margin: 0 auto;
     margin-top: 15px;
+    @extend %clearfix;
 
-    a {
-      margin: 0 4px 0 8px;
+    .passive {
+      float: left;
+      width: 42px;
+      height:  42px;
+      margin: 0 7px 0 8px;
+      background: url("../img/skill-default.png");
 
-      img {
-        width: 42px;
-        height: 42px;
-        background: url("../img/skill-default.png");
+      a {
+
+        img {
+          width: 42px;
+          height: 42px;
+        }
       }
-    }
+    } //passive
   } //passive-wrapper
 } //char-wrapper
 
