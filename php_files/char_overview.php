@@ -45,10 +45,15 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['head']['icon'].'.png';?>" />
               </span>
               <?php
-                for ($i=0; $i < $socket_arr[0]; $i++) {
-                  echo "<span class='socket middle_socket'></span>";
+                if (isset($socket_arr[0])) {
+                  for ($i=0; $i < $socket_arr[0]; $i++) {
+                    echo "<span class='socket middle_socket'></span>";
+                    if ($head_gem != null) {
+                      echo "<img class='gem' src='$head_gem'/>";
+                    }
+                  }
                 }
-               ?>
+              ?>
             </a>
           </div>
 
@@ -66,10 +71,15 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['neck']['icon'].'.png';?>" />
               </span>
               <?php
-                for ($i=0; $i < $socket_arr[1]; $i++) {
-                  echo "<span class='socket middle_socket'></span>";
+                if (isset($socket_arr[1])) {
+                  for ($i=0; $i < $socket_arr[1]; $i++) {
+                    echo "<span class='socket middle_socket'></span>";
+                    if (isset($neck_decode['gems'][0])) {
+                      echo "<img class='gem' src='$neck_gem'/>";
+                    }
+                  }
                 }
-               ?>
+              ?>
             </a>
           </div>
 
@@ -87,8 +97,13 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['torso']['icon'].'.png';?>" />
               </span>
               <?php
-                for ($i=0; $i < $socket_arr[2]; $i++) {
-                  echo "<span class='socket torso_socket'></span>";
+                if (isset($socket_arr[2])) {
+                  for ($i=0; $i < $socket_arr[2]; $i++) {
+                    echo "<span class='socket torso_socket'></span>";
+                    if (isset($torso_decode['gems'][$i])) {
+                      echo "<img class='gem torso_gem_$i' src='$torso_gem[$i]'/>";
+                    }
+                  }
                 }
               ?>
             </a>
@@ -108,10 +123,15 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['leftFinger']['icon'].'.png';?>" />
               </span>
               <?php
-                for ($i=0; $i < $socket_arr[3]; $i++) {
-                  echo "<span class='socket middle_socket'></span>";
+                if (isset($socket_arr[3])) {
+                  for ($i=0; $i < $socket_arr[3]; $i++) {
+                    echo "<span class='socket middle_socket'></span>";
+                    if (isset($leftFinger_decode['gems'][0])) {
+                      echo "<img class='gem' src='$leftFinger_gem'/>";
+                    }
+                  }
                 }
-               ?>
+              ?>
             </a>
           </div>
 
@@ -129,10 +149,15 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['rightFinger']['icon'].'.png';?>" />
               </span>
               <?php
-                for ($i=0; $i < $socket_arr[4]; $i++) {
-                  echo "<span class='socket middle_socket'></span>";
+                if (isset($socket_arr[4])) {
+                  for ($i=0; $i < $socket_arr[4]; $i++) {
+                    echo "<span class='socket middle_socket'></span>";
+                    if (isset($rightFinger_decode['gems'][0])) {
+                      echo "<img class='gem' src='$rightFinger_gem'/>";
+                    }
+                  }
                 }
-               ?>
+              ?>
             </a>
           </div>
 
@@ -142,10 +167,15 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['legs']['icon'].'.png';?>" />
               </span>
               <?php
-                for ($i=0; $i < $socket_arr[5]; $i++) {
-                  echo "<span class='socket legs_socket'></span>";
+                if (isset($socket_arr[5])) {
+                  for ($i=0; $i < $socket_arr[5]; $i++) {
+                    echo "<span class='socket legs_socket'></span>";
+                    if (isset($legs_decode['gems'][$i])) {
+                      echo "<img class='gem legs_gem_$i' src='$legs_gem[$i]'/>";
+                    }
+                  }
                 }
-               ?>
+              ?>
             </a>
           </div>
 
@@ -155,10 +185,15 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['mainHand']['icon'].'.png';?>" />
               </span>
               <?php
-                for ($i=0; $i < $socket_arr[6]; $i++) {
-                  echo "<span class='socket middle_socket'></span>";
+                if (isset($socket_arr[6])) {
+                  for ($i=0; $i < $socket_arr[6]; $i++) {
+                    echo "<span class='socket middle_socket'></span>";
+                    if ($mainHand_gem != null) {
+                      echo "<img class='gem' src='$mainHand_gem'/>";
+                    }
+                  }
                 }
-               ?>
+              ?>
             </a>
           </div>
 
@@ -176,30 +211,33 @@
                 <img src="<?php echo $item_icon.$char_decode['items']['offHand']['icon'].'.png';?>" />
               </span>
               <?php
-              if ($mainHand_decode['type']['twoHanded'] == false) {
-                for ($i=0; $i < $socket_arr[7]; $i++) {
-                  echo "<span class='socket middle_socket'></span>";
+                if (isset($socket_arr[7])) {
+                  for ($i=0; $i < $socket_arr[7]; $i++) {
+                    echo "<span class='socket middle_socket'></span>";
+                    if ($offHand_gem != null) {
+                      echo "<img class='gem' src='$offHand_gem'/>";
+                    }
+                  }
                 }
-              }
-               ?>
+              ?>
             </a>
           </div>
         </div> <!-- slot-wrapper -->
         <hr>
         <div class="skill-wrapper">
-        <?php
-          $skill_arr = ['left_mouse', 'right_mouse', 'skill_1', 'skill_2', 'skill_3', 'skill_4'];
-          for ($i=0; $i < count($skill_arr); $i++) {
-            echo
-              "<a href='$activetips_arr[$i]'>
-                <label class=$skill_arr[$i]>";
-                if ($skillactive_arr[$i] != null) {
-                  echo "<img src='$skillactive_arr[$i]'/>";
-                }
-                echo "</label>
-              </a>";
-          }
-        ?>
+          <?php
+            $skill_arr = ['left_mouse', 'right_mouse', 'skill_1', 'skill_2', 'skill_3', 'skill_4'];
+            for ($i=0; $i < count($skill_arr); $i++) {
+              echo
+                "<a href='$activetips_arr[$i]'>
+                  <label class=$skill_arr[$i]>";
+                  if ($skillactive_arr[$i] != null) {
+                    echo "<img src='$skillactive_arr[$i]'/>";
+                  }
+                  echo "</label>
+                </a>";
+            }
+          ?>
         </div> <!-- skill-wrapper -->
 
         <div class="passive-wrapper">
@@ -245,6 +283,7 @@
           </tr>
         </table>
       </div>
+      <?php ?> <!-- DEBUG -->
     </main>
     <footer>
       <p>©1996 - 2016 Blizzard Entertainment, Inc. All rights reserved.<br>Battle.net, Blizzard Entertainment, Diablo and Reaper of Souls are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>

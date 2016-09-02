@@ -302,15 +302,7 @@ main {
   width: 32px;
   height: 32px;
   left: 50%;
-}
-
-.char-wrapper .slot-wrapper .slot a .socket .gem {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
+  z-index: 1;
 }
 
 .char-wrapper .slot-wrapper .slot a .middle_socket {
@@ -343,6 +335,36 @@ main {
   transform: translate(-50%, -83%);
 }
 
+.char-wrapper .slot-wrapper .slot a .gem {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 21px;
+  height: 21px;
+  z-index: 2;
+}
+
+.char-wrapper .slot-wrapper .slot a .torso_gem_0 {
+  top: 25%;
+  transform: translate(-50%, -75%);
+}
+
+.char-wrapper .slot-wrapper .slot a .torso_gem_2 {
+  top: 75%;
+  transform: translate(-50%, -25%);
+}
+
+.char-wrapper .slot-wrapper .slot a .legs_gem_0 {
+  top: 23%;
+  transform: translate(-50%, -22%);
+}
+
+.char-wrapper .slot-wrapper .slot a .legs_gem_1 {
+  top: 76%;
+  transform: translate(-50%, -76%);
+}
+
 .char-wrapper .slot-wrapper .green {
   background: linear-gradient(#006600, #33cc33);
   border: 2px solid #748e3d;
@@ -359,6 +381,24 @@ main {
 
 .char-wrapper .slot-wrapper .orange:hover {
   border: 2px solid #c29337;
+}
+
+.char-wrapper .slot-wrapper .yellow {
+  background: linear-gradient(#ffaa00, #ffdb4d);
+  border: 2px solid #cccc00;
+}
+
+.char-wrapper .slot-wrapper .yellow:hover {
+  border: 2px solid #ffff66;
+}
+
+.char-wrapper .slot-wrapper .blue {
+  background: linear-gradient(#0000ff, #0066ff);
+  border: 2px solid #0040ff;
+}
+
+.char-wrapper .slot-wrapper .blue:hover {
+  border: 2px solid #3399ff;
 }
 
 .char-wrapper .slot-wrapper .head-slot {

@@ -1,0 +1,554 @@
+{
+  "id" : "Unique_Helm_016_x1",
+  "name" : "Apogäum des Weisen",
+  "icon" : "unique_helm_016_x1_demonhunter_male",
+  "displayColor" : "green",
+  "tooltipParams" : "item/CoUBCPjywqEEEgcIBBXavf8THWYjBlAd83AHrR2bBgDLHTp12owd89VHtB0_8gnYMI9SOKQCQABIBlASWARgpAJqKQoMCAAQt4ux84SAgIAHEhkIi9e1jAkSBwgEFaS-HMIwj1I4AEABkAEFjQFzLESJpQE6ddqMrQHmFdsNuAH9oc6_CMABFBi09_2_AlAEWAKgAbT3_b8CoAG6p8y7Dg",
+  "requiredLevel" : 70,
+  "itemLevel" : 70,
+  "stackSizeMax" : 0,
+  "bonusAffixes" : 0,
+  "bonusAffixesMax" : 0,
+  "accountBound" : true,
+  "flavorText" : "Die Muster sind Imris' einzigartigem Schutzkreis nachempfunden, der durch seine eigene Magie nicht nur Angreifer fernhielt, sondern auch Imris' Gedanken stärkte.",
+  "dyeColor" : {
+    "item" : {
+      "id" : "Dye_13",
+      "name" : "Elegantes Färbemittel",
+      "icon" : "dye_13_demonhunter_male",
+      "displayColor" : "white",
+      "tooltipParams" : "item/elegant-dye"
+    }
+  },
+  "transmogItem" : {
+    "id" : "Unique_Helm_Set_14_x1",
+    "name" : "Des Schattens Maske",
+    "icon" : "unique_helm_set_14_x1_demonhunter_male",
+    "displayColor" : "green",
+    "tooltipParams" : "item/the-shadows-mask",
+    "requiredLevel" : 70,
+    "itemLevel" : 70,
+    "stackSizeMax" : 0,
+    "bonusAffixes" : 4,
+    "bonusAffixesMax" : 4,
+    "accountBound" : true,
+    "flavorText" : "\"Die Dunkelheit ist Euer Freund und der Alptraum Eurer Feinde.\"\r\n– Dämonenjäger Kunai",
+    "typeName" : "Set: Kopfschutz",
+    "type" : {
+      "twoHanded" : false,
+      "id" : "Helm"
+    },
+    "damageRange" : "0–0 Schaden",
+    "armor" : {
+      "min" : 660.0,
+      "max" : 759.0
+    },
+    "slots" : [ "head" ],
+    "attributes" : {
+      "primary" : [ ],
+      "secondary" : [ ],
+      "passive" : [ ]
+    },
+    "attributesRaw" : {
+      "Armor_Item" : {
+        "min" : 660.0,
+        "max" : 759.0
+      },
+      "Sockets" : {
+        "min" : 1.0,
+        "max" : 1.0
+      },
+      "Durability_Max" : {
+        "min" : 500.0,
+        "max" : 1000.0
+      },
+      "Durability_Cur" : {
+        "min" : 500.0,
+        "max" : 1000.0
+      }
+    },
+    "randomAffixes" : [ {
+      "oneOf" : [ {
+        "attributes" : {
+          "primary" : [ {
+            "text" : "+626–750 Geschicklichkeit",
+            "color" : "blue",
+            "affixType" : "default"
+          } ],
+          "secondary" : [ ],
+          "passive" : [ ]
+        },
+        "attributesRaw" : {
+          "Dexterity_Item" : {
+            "min" : 626.0,
+            "max" : 750.0
+          }
+        }
+      }, {
+        "attributes" : {
+          "primary" : [ {
+            "text" : "+626–750 Stärke",
+            "color" : "blue",
+            "affixType" : "default"
+          } ],
+          "secondary" : [ ],
+          "passive" : [ ]
+        },
+        "attributesRaw" : {
+          "Strength_Item" : {
+            "min" : 626.0,
+            "max" : 750.0
+          }
+        }
+      }, {
+        "attributes" : {
+          "primary" : [ {
+            "text" : "+626–750 Intelligenz",
+            "color" : "blue",
+            "affixType" : "default"
+          } ],
+          "secondary" : [ ],
+          "passive" : [ ]
+        },
+        "attributesRaw" : {
+          "Intelligence_Item" : {
+            "min" : 626.0,
+            "max" : 750.0
+          }
+        }
+      } ]
+    } ],
+    "gems" : [ ],
+    "socketEffects" : [ ],
+    "set" : {
+      "name" : "Des Schattens Mantelung",
+      "items" : [ {
+        "id" : "Unique_Shoulder_Set_14_x1",
+        "name" : "Des Schattens Bürde",
+        "icon" : "unique_shoulder_set_14_x1_demonhunter_male",
+        "displayColor" : "green",
+        "tooltipParams" : "item/the-shadows-burden"
+      }, {
+        "id" : "Unique_Gloves_Set_14_x1",
+        "name" : "Des Schattens Griff",
+        "icon" : "unique_gloves_set_14_x1_demonhunter_male",
+        "displayColor" : "green",
+        "tooltipParams" : "item/the-shadows-grasp"
+      }, {
+        "id" : "Unique_Boots_Set_14_x1",
+        "name" : "Des Schattens leise Sohlen",
+        "icon" : "unique_boots_set_14_x1_demonhunter_male",
+        "displayColor" : "green",
+        "tooltipParams" : "item/the-shadows-heels"
+      }, {
+        "id" : "Unique_Helm_Set_14_x1",
+        "name" : "Des Schattens Maske",
+        "icon" : "unique_helm_set_14_x1_demonhunter_male",
+        "displayColor" : "green",
+        "tooltipParams" : "item/the-shadows-mask"
+      }, {
+        "id" : "Unique_Pants_Set_14_x1",
+        "name" : "Des Schattens Umhüllung",
+        "icon" : "unique_pants_set_14_x1_demonhunter_male",
+        "displayColor" : "green",
+        "tooltipParams" : "item/the-shadows-coil"
+      }, {
+        "id" : "Unique_Chest_Set_14_x1",
+        "name" : "Des Schattens Unheil",
+        "icon" : "unique_chest_set_14_x1_demonhunter_male",
+        "displayColor" : "green",
+        "tooltipParams" : "item/the-shadows-bane"
+      } ],
+      "slug" : "the-shadows-mantle",
+      "ranks" : [ {
+        "required" : 2,
+        "attributes" : {
+          "primary" : [ ],
+          "secondary" : [ ],
+          "passive" : [ {
+            "text" : "Erhöht Euren Schaden um 1200%, wenn Ihr eine Nahkampfwaffe führt.",
+            "color" : "orange",
+            "affixType" : "default"
+          } ]
+        },
+        "attributesRaw" : {
+          "Item_Power_Passive#ItemPassive_Unique_Ring_524_x1" : {
+            "min" : 12.0,
+            "max" : 12.0
+          }
+        }
+      }, {
+        "required" : 4,
+        "attributes" : {
+          "primary" : [ ],
+          "secondary" : [ ],
+          "passive" : [ {
+            "text" : "'Schattenkraft' erhält den Effekt jeder Rune und bleibt dauerhaft aktiv.",
+            "color" : "orange",
+            "affixType" : "default"
+          } ]
+        },
+        "attributesRaw" : {
+          "Item_Power_Passive#ItemPassive_Unique_Ring_680_x1" : {
+            "min" : 1.0,
+            "max" : 1.0
+          }
+        }
+      }, {
+        "required" : 6,
+        "attributes" : {
+          "primary" : [ ],
+          "secondary" : [ ],
+          "passive" : [ {
+            "text" : "'Aufspießen' fügt dem ersten getroffenen Gegner 40000% mehr Waffenschaden zu.",
+            "color" : "orange",
+            "affixType" : "default"
+          } ]
+        },
+        "attributesRaw" : {
+          "Item_Power_Passive#P4_ItemPassive_Unique_Ring_002" : {
+            "min" : 400.0,
+            "max" : 400.0
+          }
+        }
+      } ]
+    },
+    "setItemsEquipped" : [ "Unique_Helm_Set_14_x1" ],
+    "craftedBy" : [ ],
+    "seasonRequiredToDrop" : -1,
+    "isSeasonRequiredToDrop" : false,
+    "description" : null,
+    "blockChance" : "+0,0% Blockchance"
+  },
+  "typeName" : "Set: Kopfschutz",
+  "type" : {
+    "twoHanded" : false,
+    "id" : "Helm"
+  },
+  "damageRange" : "0–0 Schaden",
+  "armor" : {
+    "min" : 710.0,
+    "max" : 710.0
+  },
+  "slots" : [ "head" ],
+  "attributes" : {
+    "primary" : [ {
+      "text" : "+685 Intelligenz",
+      "color" : "blue",
+      "affixType" : "default"
+    }, {
+      "text" : "+666 Vitalität",
+      "color" : "blue",
+      "affixType" : "default"
+    }, {
+      "text" : "Kritische Trefferchance um 6,0% erhöht",
+      "color" : "blue",
+      "affixType" : "enchant"
+    } ],
+    "secondary" : [ {
+      "text" : "+148 Giftwiderstand",
+      "color" : "blue",
+      "affixType" : "default"
+    }, {
+      "text" : "+33% mehr Gold von Gegnern",
+      "color" : "blue",
+      "affixType" : "utility"
+    } ],
+    "passive" : [ ]
+  },
+  "attributesRaw" : {
+    "Season" : {
+      "min" : 0.0,
+      "max" : 0.0
+    },
+    "Intelligence_Item" : {
+      "min" : 685.0,
+      "max" : 685.0
+    },
+    "Sockets" : {
+      "min" : 1.0,
+      "max" : 1.0
+    },
+    "Vitality_Item" : {
+      "min" : 666.0,
+      "max" : 666.0
+    },
+    "Post_2_1_2_Drop" : {
+      "min" : 1.0,
+      "max" : 1.0
+    },
+    "Durability_Cur" : {
+      "min" : 292.0,
+      "max" : 292.0
+    },
+    "Loot_2_0_Drop" : {
+      "min" : 1.0,
+      "max" : 1.0
+    },
+    "Gold_Find" : {
+      "min" : 0.33,
+      "max" : 0.33
+    },
+    "Armor_Item" : {
+      "min" : 710.0,
+      "max" : 710.0
+    },
+    "Resistance#Poison" : {
+      "min" : 148.0,
+      "max" : 148.0
+    },
+    "IsCrafted" : {
+      "min" : 1.0,
+      "max" : 1.0
+    },
+    "Item_Binding_Level_Override" : {
+      "min" : 2.0,
+      "max" : 2.0
+    },
+    "Post_2_1_2_Drop" : {
+      "min" : 1.0,
+      "max" : 1.0
+    },
+    "Crit_Percent_Bonus_Capped" : {
+      "min" : 0.06,
+      "max" : 0.06
+    },
+    "Durability_Max" : {
+      "min" : 292.0,
+      "max" : 292.0
+    }
+  },
+  "randomAffixes" : [ ],
+  "gems" : [ {
+    "item" : {
+      "id" : "x1_Diamond_10",
+      "name" : "Makelloser königlicher Diamant",
+      "icon" : "x1_diamond_10_demonhunter_male",
+      "displayColor" : "blue",
+      "tooltipParams" : "item/ChkIi9e1jAkSBwgEFaS-HMIwj1I4AEABkAEFGLeFmt4H"
+    },
+    "isGem" : true,
+    "isJewel" : false,
+    "attributes" : {
+      "primary" : [ {
+        "text" : "Reduziert die Abklingzeiten aller Fertigkeiten um 12,5%",
+        "color" : "blue",
+        "affixType" : "utility"
+      } ],
+      "secondary" : [ ],
+      "passive" : [ ]
+    },
+    "attributesRaw" : {
+      "Power_Cooldown_Reduction_Percent_All" : {
+        "min" : 0.125,
+        "max" : 0.125
+      }
+    }
+  } ],
+  "socketEffects" : [ ],
+  "set" : {
+    "name" : "Reise des Weisen",
+    "items" : [ {
+      "id" : "Unique_Helm_016_x1",
+      "name" : "Apogäum des Weisen",
+      "icon" : "unique_helm_016_x1_demonhunter_male",
+      "displayColor" : "green",
+      "tooltipParams" : "recipe/sages-apogee"
+    }, {
+      "id" : "Unique_Gloves_017_x1",
+      "name" : "Einfluss des Weisen",
+      "icon" : "unique_gloves_017_x1_demonhunter_male",
+      "displayColor" : "green",
+      "tooltipParams" : "recipe/sages-purchase"
+    }, {
+      "id" : "Unique_Boots_018_x1",
+      "name" : "Gang des Weisen",
+      "icon" : "unique_boots_018_x1_demonhunter_male",
+      "displayColor" : "green",
+      "tooltipParams" : "recipe/sages-passage"
+    } ],
+    "slug" : "sages-journey",
+    "ranks" : [ {
+      "required" : 2,
+      "attributes" : {
+        "primary" : [ {
+          "text" : "+250 Stärke",
+          "color" : "blue",
+          "affixType" : "default"
+        }, {
+          "text" : "+250 Geschicklichkeit",
+          "color" : "blue",
+          "affixType" : "default"
+        }, {
+          "text" : "+250 Intelligenz",
+          "color" : "blue",
+          "affixType" : "default"
+        }, {
+          "text" : "+250 Vitalität",
+          "color" : "blue",
+          "affixType" : "default"
+        } ],
+        "secondary" : [ ],
+        "passive" : [ ]
+      },
+      "attributesRaw" : {
+        "Intelligence_Item" : {
+          "min" : 250.0,
+          "max" : 250.0
+        },
+        "Dexterity_Item" : {
+          "min" : 250.0,
+          "max" : 250.0
+        },
+        "Strength_Item" : {
+          "min" : 250.0,
+          "max" : 250.0
+        },
+        "Vitality_Item" : {
+          "min" : 250.0,
+          "max" : 250.0
+        }
+      }
+    }, {
+      "required" : 3,
+      "attributes" : {
+        "primary" : [ ],
+        "secondary" : [ ],
+        "passive" : [ {
+          "text" : "Jedes Mal, wenn ein Atem des Todes als Beute fallen gelassen wird, fällt noch ein weiterer.",
+          "color" : "orange",
+          "affixType" : "default"
+        } ]
+      },
+      "attributesRaw" : {
+        "Item_Power_Passive#ItemPassive_Unique_Ring_715_x1" : {
+          "min" : 1.0,
+          "max" : 1.0
+        }
+      }
+    } ]
+  },
+  "setItemsEquipped" : [ "Unique_Helm_016_x1", "Unique_Boots_018_x1" ],
+  "recipe" : {
+    "id" : "T12_Legendary_Set_Sage_Helm_X1",
+    "slug" : "sages-apogee",
+    "name" : "Apogäum des Weisen",
+    "cost" : 72000,
+    "reagents" : [ {
+      "quantity" : 20,
+      "item" : {
+        "id" : "Crafting_AssortedParts_01",
+        "name" : "Wiederverwertbare Teile",
+        "icon" : "crafting_assortedparts_01_demonhunter_male",
+        "displayColor" : "white",
+        "tooltipParams" : "item/reusable-parts"
+      }
+    }, {
+      "quantity" : 20,
+      "item" : {
+        "id" : "Crafting_Magic_01",
+        "name" : "Arkanstaub",
+        "icon" : "crafting_magic_01_demonhunter_male",
+        "displayColor" : "blue",
+        "tooltipParams" : "item/arcane-dust"
+      }
+    }, {
+      "quantity" : 30,
+      "item" : {
+        "id" : "Crafting_Rare_01",
+        "name" : "Trüber Kristall",
+        "icon" : "crafting_rare_01_demonhunter_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/veiled-crystal"
+      }
+    }, {
+      "quantity" : 1,
+      "item" : {
+        "id" : "p2_ActBountyReagent_02",
+        "name" : "Nachtschatten aus Caldeum",
+        "icon" : "p2_actbountyreagent_02_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/caldeum-nightshade"
+      }
+    }, {
+      "quantity" : 1,
+      "item" : {
+        "id" : "p2_ActBountyReagent_05",
+        "name" : "Heiliges Wasser aus Westmark",
+        "icon" : "p2_actbountyreagent_05_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/westmarch-holy-water"
+      }
+    } ],
+    "itemProduced" : {
+      "id" : "Unique_Helm_016_x1",
+      "name" : "Apogäum des Weisen",
+      "icon" : "unique_helm_016_x1_demonhunter_male",
+      "displayColor" : "green",
+      "tooltipParams" : "recipe/sages-apogee"
+    }
+  },
+  "craftedBy" : [ {
+    "id" : "T12_Legendary_Set_Sage_Helm_X1",
+    "slug" : "sages-apogee",
+    "name" : "Apogäum des Weisen",
+    "cost" : 72000,
+    "reagents" : [ {
+      "quantity" : 20,
+      "item" : {
+        "id" : "Crafting_AssortedParts_01",
+        "name" : "Wiederverwertbare Teile",
+        "icon" : "crafting_assortedparts_01_demonhunter_male",
+        "displayColor" : "white",
+        "tooltipParams" : "item/reusable-parts"
+      }
+    }, {
+      "quantity" : 20,
+      "item" : {
+        "id" : "Crafting_Magic_01",
+        "name" : "Arkanstaub",
+        "icon" : "crafting_magic_01_demonhunter_male",
+        "displayColor" : "blue",
+        "tooltipParams" : "item/arcane-dust"
+      }
+    }, {
+      "quantity" : 30,
+      "item" : {
+        "id" : "Crafting_Rare_01",
+        "name" : "Trüber Kristall",
+        "icon" : "crafting_rare_01_demonhunter_male",
+        "displayColor" : "yellow",
+        "tooltipParams" : "item/veiled-crystal"
+      }
+    }, {
+      "quantity" : 1,
+      "item" : {
+        "id" : "p2_ActBountyReagent_02",
+        "name" : "Nachtschatten aus Caldeum",
+        "icon" : "p2_actbountyreagent_02_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/caldeum-nightshade"
+      }
+    }, {
+      "quantity" : 1,
+      "item" : {
+        "id" : "p2_ActBountyReagent_05",
+        "name" : "Heiliges Wasser aus Westmark",
+        "icon" : "p2_actbountyreagent_05_demonhunter_male",
+        "displayColor" : "orange",
+        "tooltipParams" : "item/westmarch-holy-water"
+      }
+    } ],
+    "itemProduced" : {
+      "id" : "Unique_Helm_016_x1",
+      "name" : "Apogäum des Weisen",
+      "icon" : "unique_helm_016_x1_demonhunter_male",
+      "displayColor" : "green",
+      "tooltipParams" : "recipe/sages-apogee"
+    }
+  } ],
+  "seasonRequiredToDrop" : -1,
+  "isSeasonRequiredToDrop" : false,
+  "description" : null,
+  "blockChance" : "+0,0% Blockchance"
+}
