@@ -113,8 +113,19 @@ footer p:first-of-type {
 }
 
 .input-wrapper {
-  width: 400px;
+  width: 530px;
   margin: 0 auto;
+}
+
+.input-wrapper select[name="continent"] {
+  width: 130px;
+  height: 35px;
+  font-family: 'Diablo3';
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  padding-left: 5px;
+  vertical-align: bottom;
 }
 
 .input-wrapper input[name="BattleTag"] {
@@ -123,10 +134,11 @@ footer p:first-of-type {
   font-size: 20px;
   padding: 5px 0 5px 10px;
   border-radius: 5px;
+  margin: 0 10px 0 10px;
+  vertical-align: bottom;
 }
 
 .input-wrapper input[name="search"] {
-  margin-left: 15px;
   font-family: 'Diablo3';
   font-weight: bold;
   height: 35px;
@@ -399,6 +411,15 @@ main {
 
 .char-wrapper .slot-wrapper .blue:hover {
   border: 2px solid #3399ff;
+}
+
+.char-wrapper .slot-wrapper .white {
+  background: linear-gradient(#4d3300, #805500);
+  border: 2px solid #996600;
+}
+
+.char-wrapper .slot-wrapper .white:hover {
+  border: 2px solid #cc8800;
 }
 
 .char-wrapper .slot-wrapper .head-slot {

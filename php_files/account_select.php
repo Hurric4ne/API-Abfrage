@@ -31,15 +31,7 @@
           <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" value="Quin69#1336" required>
           <input type="submit" name="search" value="suchen">
         </form>
-        <form action="account_select.php" method="post">
-          <input type="submit" name="delete" value="löschen">
-        </form>
-        <?php
-        if (isset($_POST['delete'])) {
-          session_unset();
-          header("Refresh:0");
-        }
-        ?>
+        
       </div>
       <div class="account-wrapper">
         <?php

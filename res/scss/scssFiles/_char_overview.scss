@@ -171,6 +171,14 @@ main {
       }
     }
 
+    .white {
+      background: linear-gradient(#4d3300, #805500);
+      border: 2px solid #996600;
+      &:hover {
+        border: 2px solid #cc8800;
+      }
+    }
+
     .head-slot {
       width: 66px;
       height: 66px;
@@ -203,7 +211,7 @@ main {
       height: 56px;
       right: 60px;
       top: 43px;
-
+      
       img {
         width: 52px;
         height: 52px;

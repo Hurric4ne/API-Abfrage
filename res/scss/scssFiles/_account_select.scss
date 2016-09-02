@@ -1,6 +1,17 @@
 .input-wrapper {
-  width: 400px;
+  width: 530px;
   margin: 0 auto;
+
+  select[name="continent"] {
+    width: 130px;
+    height: 35px;
+    font-family: 'Diablo3';
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 5px;
+    vertical-align: bottom;
+  }
 
   input[name="BattleTag"] {
     height: 35px;
@@ -8,10 +19,12 @@
     font-size: 20px;
     padding: 5px 0 5px 10px;
     border-radius: 5px;
+    margin: 0 10px 0 10px;
+    vertical-align: bottom;
+
   }
 
   input[name="search"] {
-    margin-left: 15px;
     font-family: 'Diablo3';
     font-weight: bold;
     height: 35px;
