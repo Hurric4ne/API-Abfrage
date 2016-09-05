@@ -34,8 +34,14 @@
   $skillactive_arr = array();
   $activetips_arr = array();
   for ($i=0; $i <=5 ; $i++) {
-    $skillactive_arr[$i] = $skill_icon.$char_decode['skills']['active'][$i]['skill']['icon'].".png";
-    $activetips_arr[$i] = $tooltip_url.$char_decode['class'].'/active/'.$char_decode['skills']['active'][$i]['skill']['slug'].'#'.$char_decode['skills']['active'][$i]['rune']['type'].'+';
+    if(isset($char_decode['skills']['active'][$i]['skill'])) {
+      $skillactive_arr[$i] = $skill_icon.$char_decode['skills']['active'][$i]['skill']['icon'].".png";
+      if (isset($char_decode['skills']['active'][$i]['rune']['type'])) {
+        $activetips_arr[$i] = $tooltip_url.$char_decode['class'].'/active/'.$char_decode['skills']['active'][$i]['skill']['slug'].'#'.$char_decode['skills']['active'][$i]['rune']['type'].'+';
+      }else {
+        $activetips_arr[$i] = $tooltip_url.$char_decode['class'].'/active/'.$char_decode['skills']['active'][$i]['skill']['slug'];
+      }
+    }
   }
 
   //Array mit passiven Skillicon-Links füllen
@@ -43,18 +49,24 @@
   $skillpassive_arr = array();
   $passivetips_arr = array();
   for ($i=0; $i <=3 ; $i++) {
-    $skillpassive_arr[$i] = $skill_icon.$char_decode['skills']['passive'][$i]['skill']['icon'].".png";
-    $passivetips_arr[$i] = $tooltip_url.$char_decode['class'].'/passive/'.$char_decode['skills']['passive'][$i]['skill']['slug'];
+    if (isset($char_decode['skills']['passive'][$i]['skill'])) {
+      $skillpassive_arr[$i] = $skill_icon.$char_decode['skills']['passive'][$i]['skill']['icon'].".png";
+      $passivetips_arr[$i] = $tooltip_url.$char_decode['class'].'/passive/'.$char_decode['skills']['passive'][$i]['skill']['slug'];
+    }
   }
 
   //Array mit statistischen Werten füllen
   $stat_arr = array(
-    'Schaden' => $char_decode['stats']['damage'],
-    'Zähigkeit' => $char_decode['stats']['toughness'],
-    'Erholung' => $char_decode['stats']['healing'],
-    'Leben' => $char_decode['stats']['life'],
-    'Elitekills' => $char_decode['kills']['elites']
+    $char_decode['stats']['damage'],
+    $char_decode['stats']['toughness'],
+    $char_decode['stats']['healing'],
+    $char_decode['stats']['life'],
+    $char_decode['kills']['elites']
   );
+
+  for ($i=0; $i < sizeof($stat_arr); $i++) {
+    $stat_arr[$i] = str_replace(".", ",", $stat_arr[$i]);
+  }
 
   $socket_arr = array();
   //Dekodieren der Items für Socketanzahl-Abfragen

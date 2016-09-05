@@ -41,7 +41,9 @@
         $gender = "_male.png";
       }
       $char_name = $account['heroes'][$i]['name'];
+      $_SESSION['charnames'][$i] = $char_name;
       $char_class = $account['heroes'][$i]['class'];
+
 
       switch ($char_class) {
         case 'barbarian':
@@ -80,6 +82,7 @@
       $char_id = $account['heroes'][$i]['id'];
       $char_url = $continent.$api_profile.$BattleTag."/hero/".$char_id.$locale.$apikey;
       $_SESSION['link_arr'][$char_id] = $char_url;
+      $_SESSION['char_id'][$i] = $char_id;
 
       echo "
       <a href='char_overview.php?$char_id'><div class='$char'>

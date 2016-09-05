@@ -17,7 +17,6 @@ main {
       font-family: 'Diablo3';
       color: white;
       font-size: 20px;
-      font-weight: bold;
       padding: 2px 0 2px 0;
       position: relative;
 
@@ -172,10 +171,10 @@ main {
     }
 
     .white {
-      background: linear-gradient(#4d3300, #805500);
-      border: 2px solid #996600;
+      background: linear-gradient(#a3a3a3, #dedede);
+      border: 2px solid #d4d4d4;
       &:hover {
-        border: 2px solid #cc8800;
+        border: 2px solid #ffffff;
       }
     }
 
@@ -211,7 +210,7 @@ main {
       height: 56px;
       right: 60px;
       top: 43px;
-      
+
       img {
         width: 52px;
         height: 52px;
@@ -348,46 +347,37 @@ main {
       height: 42px;
       margin-left: 14px;
       background: url("../img/skill-default.png");
-
-      a {
-
-        label {
-          width: 42px;
-          height: 42px;
-          display: inline-block;
-          position: relative;
-          &:before {
-            position: absolute;
-            content: "";
-            top: -5px;
-            left: 0px;
-            transform: translateX(-50%);
-            width: 20px;
-            height: 20px;
-            background: url("../img/skill-overlays.png");
-          }
-        } //label
-
-        .left_mouse:before {
-          background-position: 0 -1px;
-        }
-        .right_mouse:before {
-          background-position: -21px -1px;
-        }
-        .skill_1:before {
-          background-position: 0 -23px;
-        }
-        .skill_2:before {
-          background-position: -23px -23px;
-        }
-        .skill_3:before {
-          background-position: 0 -46px;
-        }
-        .skill_4:before {
-          background-position: -23px -46px;
-        }
-      } //a
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        top: -5px;
+        left: 0px;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        background: url("../img/skill-overlays.png");
+      }
     } //skill
+
+    .left_mouse:before {
+      background-position: 0 -1px;
+    }
+    .right_mouse:before {
+      background-position: -21px -1px;
+    }
+    .skill_1:before {
+      background-position: 0 -23px;
+    }
+    .skill_2:before {
+      background-position: -23px -23px;
+    }
+    .skill_3:before {
+      background-position: 0 -46px;
+    }
+    .skill_4:before {
+      background-position: -23px -46px;
+    }
   } //skill-wrapper
 
   .passive-wrapper {

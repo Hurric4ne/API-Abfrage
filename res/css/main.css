@@ -9,6 +9,7 @@ header h3 {
   font-size: 40px;
   text-align: center;
   color: white;
+  cursor: default;
 }
 
 header nav {
@@ -55,6 +56,7 @@ header nav .special {
 }
 
 footer {
+  z-index: 99;
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -140,7 +142,6 @@ footer p:first-of-type {
 
 .input-wrapper input[name="search"] {
   font-family: 'Diablo3';
-  font-weight: bold;
   height: 35px;
   width: 120px;
   font-size: 20px;
@@ -184,7 +185,6 @@ footer p:first-of-type {
   font-size: 20px;
   color: white;
   text-shadow: 1px 2px black;
-  font-weight: bold;
   line-height: 18px;
   left: 62px;
 }
@@ -226,7 +226,6 @@ footer p:first-of-type {
 
 .account-wrapper h1 {
   font-family: 'Diablo3';
-  font-weight: bold;
   text-align: center;
 }
 
@@ -252,7 +251,6 @@ main {
   font-family: 'Diablo3';
   color: white;
   font-size: 20px;
-  font-weight: bold;
   padding: 2px 0 2px 0;
   position: relative;
 }
@@ -414,12 +412,12 @@ main {
 }
 
 .char-wrapper .slot-wrapper .white {
-  background: linear-gradient(#4d3300, #805500);
-  border: 2px solid #996600;
+  background: linear-gradient(#a3a3a3, #dedede);
+  border: 2px solid #d4d4d4;
 }
 
 .char-wrapper .slot-wrapper .white:hover {
-  border: 2px solid #cc8800;
+  border: 2px solid #ffffff;
 }
 
 .char-wrapper .slot-wrapper .head-slot {
@@ -590,16 +588,10 @@ main {
   height: 42px;
   margin-left: 14px;
   background: url("../img/skill-default.png");
-}
-
-.char-wrapper .skill-wrapper .active a label {
-  width: 42px;
-  height: 42px;
-  display: inline-block;
   position: relative;
 }
 
-.char-wrapper .skill-wrapper .active a label:before {
+.char-wrapper .skill-wrapper .active:before {
   position: absolute;
   content: "";
   top: -5px;
@@ -610,27 +602,27 @@ main {
   background: url("../img/skill-overlays.png");
 }
 
-.char-wrapper .skill-wrapper .active a .left_mouse:before {
+.char-wrapper .skill-wrapper .left_mouse:before {
   background-position: 0 -1px;
 }
 
-.char-wrapper .skill-wrapper .active a .right_mouse:before {
+.char-wrapper .skill-wrapper .right_mouse:before {
   background-position: -21px -1px;
 }
 
-.char-wrapper .skill-wrapper .active a .skill_1:before {
+.char-wrapper .skill-wrapper .skill_1:before {
   background-position: 0 -23px;
 }
 
-.char-wrapper .skill-wrapper .active a .skill_2:before {
+.char-wrapper .skill-wrapper .skill_2:before {
   background-position: -23px -23px;
 }
 
-.char-wrapper .skill-wrapper .active a .skill_3:before {
+.char-wrapper .skill-wrapper .skill_3:before {
   background-position: 0 -46px;
 }
 
-.char-wrapper .skill-wrapper .active a .skill_4:before {
+.char-wrapper .skill-wrapper .skill_4:before {
   background-position: -23px -46px;
 }
 
@@ -681,12 +673,29 @@ main {
   border-bottom: 2px solid black;
 }
 
-.compare-wrapper {
-  width: 660px;
+.select-wrapper {
+  width: 725px;
+  margin: 0 auto;
 }
 
-.compare-wrapper input[name="search"] {
-  margin-right: 15px;
+.select-wrapper select {
+  height: 35px;
+  width: 250px;
+  font-size: 20px;
+  padding: 2px 0 5px 10px;
+  border-radius: 5px;
+  margin: 0 10px 0 10px;
+  vertical-align: bottom;
+}
+
+.select-wrapper input[name="compare"] {
+  font-family: 'Diablo3';
+  height: 35px;
+  width: 175px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: bottom;
 }
 
 .table-wrapper {
@@ -699,14 +708,51 @@ main {
   width: 800px;
   border: 2px solid black;
   border-radius: 5px;
+  font-family: 'Diablo3';
+  font-size: 28px;
+  text-align: center;
+}
+
+.table-wrapper table th {
+  border-bottom: 2px solid black;
+}
+
+.table-wrapper table th:nth-of-type(2n) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .table-wrapper table td {
+  border-bottom: 1px solid black;
+}
+
+.table-wrapper table td:nth-of-type(2n+2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.table-wrapper table td:nth-of-type(4n+4) {
+  text-align: right;
+  padding-right: 60px;
+}
+
+.table-wrapper table .green {
+  color: green;
+}
+
+.table-wrapper table .red {
+  color: red;
+}
+
+.table-wrapper table .blue {
+  color: blue;
+}
+
+.table-wrapper h1 {
+  margin-top: 20px;
   font-family: 'Diablo3';
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
-  border: 1px dotted black;
 }
 
 header nav ul, .account-wrapper, .char-wrapper .skill-wrapper, .char-wrapper .passive-wrapper {

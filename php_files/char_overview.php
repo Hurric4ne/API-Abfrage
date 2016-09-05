@@ -238,14 +238,16 @@
           <?php
             $skill_arr = ['left_mouse', 'right_mouse', 'skill_1', 'skill_2', 'skill_3', 'skill_4'];
             for ($i=0; $i < count($skill_arr); $i++) {
-              echo "<div class='active'>";
-                echo "<a href='$activetips_arr[$i]'>";
-                  echo "<label class=$skill_arr[$i]>";
+              echo "<div class='active $skill_arr[$i]'>";
+                if (isset($activetips_arr[$i])) {
+                  echo "<a href='$activetips_arr[$i]'>";
+                    echo "<label>";
                     if ($skillactive_arr[$i] != null) {
                       echo "<img src='$skillactive_arr[$i]'/>";
                     }
-                  echo "</label>";
-                echo "</a>";
+                    echo "</label>";
+                  echo "</a>";
+                }
               echo "</div>";
             }
           ?>
@@ -255,13 +257,15 @@
           <?php
             for ($i=0; $i<=3; $i++) {
               echo "<div class='passive'>";
+              if (isset($skillpassive_arr[$i])) {
                 echo "<a href='$passivetips_arr[$i]'>";
                   echo "<label>";
-                    if ($skillpassive_arr[$i] != null) {
-                      echo "<img src='$skillpassive_arr[$i]'/>";
-                    }
+                  if ($skillpassive_arr[$i] != null) {
+                    echo "<img src='$skillpassive_arr[$i]'/>";
+                  }
                   echo "</label>";
                 echo "</a>";
+              }
               echo "</div>";
             }
           ?>
@@ -275,23 +279,23 @@
           </tr>
           <tr>
             <td>Schaden:</td>
-            <td><?php echo $stat_arr['Schaden']; ?></td>
+            <td><?php echo $stat_arr[0]; ?></td>
           </tr>
           <tr>
             <td>Zähigkeit:</td>
-            <td><?php echo $stat_arr['Zähigkeit']; ?></td>
+            <td><?php echo $stat_arr[1]; ?></td>
           </tr>
           <tr>
             <td>Erholung:</td>
-            <td><?php echo $stat_arr['Erholung']; ?></td>
+            <td><?php echo $stat_arr[2]; ?></td>
           </tr>
           <tr>
             <td>Leben:</td>
-            <td><?php echo $stat_arr['Leben']; ?></td>
+            <td><?php echo $stat_arr[3]; ?></td>
           </tr>
           <tr>
             <td>getötete Elitegegner:</td>
-            <td><?php echo $stat_arr['Elitekills']; ?></td>
+            <td><?php echo $stat_arr[4]; ?></td>
           </tr>
         </table>
       </div>

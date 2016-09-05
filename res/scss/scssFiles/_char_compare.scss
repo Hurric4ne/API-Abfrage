@@ -1,8 +1,25 @@
-.compare-wrapper {
-  width: 660px;
+.select-wrapper {
+  width: 725px;
+  margin: 0 auto;
 
-  input[name="search"] {
-    margin-right: 15px;
+  select {
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+    padding: 2px 0 5px 10px;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    vertical-align: bottom;
+  }
+
+  input[name="compare"] {
+    font-family: 'Diablo3';
+    height: 35px;
+    width: 175px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    vertical-align: bottom;
   }
 }
 
@@ -15,14 +32,45 @@
     width: 800px;
     border: 2px solid black;
     border-radius: 5px;
+    font-family: 'Diablo3';
+    font-size: 28px;
+    text-align: center;
+
+    th {
+      border-bottom:  2px solid black;
+      &:nth-of-type(2n) {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+    }
 
     td {
-      font-family: 'Diablo3';
-      font-weight: bold;
-      font-size: 20px;
-      text-align: center;
-      border: 1px dotted black;
+      border-bottom: 1px solid black;
+      &:nth-of-type(2n+2) {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+      &:nth-of-type(4n+4) {
+        text-align: right;
+        padding-right: 60px;
+      }
     }
-  }
 
-}
+    .green {
+      color: green;
+    }
+    .red {
+      color: red;
+    }
+    .blue {
+      color: blue;
+    }
+  } //table
+
+  h1 {
+    margin-top: 20px;
+    font-family: 'Diablo3';
+    font-size: 28px;
+    text-align: center;
+  }
+} //table-wrapper

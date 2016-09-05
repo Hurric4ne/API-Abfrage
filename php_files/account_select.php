@@ -28,10 +28,9 @@
             <option value="eu">Europa</option>
             <option value="us">Amerika</option>
           </select>
-          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" value="Quin69#1336" required>
+          <input type="text" name="BattleTag" pattern="^\D[0-9A-Za-z]{2,11}#\d{4,5}$" value="Hurric4ne#2268" required>
           <input type="submit" name="search" value="suchen">
         </form>
-        
       </div>
       <div class="account-wrapper">
         <?php

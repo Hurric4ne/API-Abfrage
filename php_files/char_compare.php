@@ -5,7 +5,10 @@
     <title>API-Abfrage</title>
     <link rel="shortcut icon" href="../res/img/favicon.ico">
     <link rel="stylesheet" href="../res/css/main.css" charset="utf-8">
-    <?php require 'variables.php'; session_start();?>
+    <?php
+      require 'variables.php';
+      require 'compare_request.php';
+    ?>
   </head>
   <body>
     <header>
@@ -19,35 +22,47 @@
       </nav>
     </header>
     <main>
-      <div class="input-wrapper compare-wrapper">
-        <form action="account_select.php" method="post">
-          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" value="Hurric4ne#2268" required>
-          <input type="submit" name="search" value="suchen">
-          <input type="text" name="BattleTag" pattern="^\D.{2,11}#\d{4,5}$" value="Megalomon#2727" required>
+      <div class="select-wrapper">
+        <form action="char_compare.php" method="post">
+          <select name="char1">
+            <?php
+              for ($i=0; $i < sizeof($_SESSION['charnames']); $i++) {
+                echo "<option value='".$_SESSION['char_id'][$i]."'>".$_SESSION['charnames'][$i]."</option>";
+              }
+            ?>
+          </select>
+          <input type="submit" name="compare" value="vergleichen">
+          <select name="char2">
+            <?php
+              for ($i=0; $i < sizeof($_SESSION['charnames']); $i++) {
+                echo "<option value='".$_SESSION['char_id'][$i]."'>".$_SESSION['charnames'][$i]."</option>";
+              }
+            ?>
+          </select>
         </form>
       </div>
       <div class="table-wrapper">
         <?php
-        $compare_arr = ['Schaden', 'Zähigkeit', 'Erholung', 'Leben'];
+          if (isset($_POST['char1']) && isset($_POST['char2']) ) {
         ?>
         <table cellspacing="0">
-          <th>
-            <td>
-              Charakter 1
-            </td>
-            <td>
-              Charakter 2
-            </td>
-          </th>
+          <tr>
+            <th></th>
+            <th><?php echo $char1_stat_arr[0]; ?> </th>
+            <th><?php echo $char2_stat_arr[0]; ?> </th>
+            <th>Unterschied</th>
+          </tr>
           <?php
             for ($i=0; $i < sizeof($compare_arr); $i++) {
-              echo "
-              <tr>
-                <td>$compare_arr[$i]</td>
-                <td></td>
-                <td></td>
-              </tr>
-              ";
+                echo "<tr>";
+                  echo "<td>".$compare_arr[$i]."</td>";
+                  echo "<td class='".$difference_left_arr[$i+1]."'>".$char1_stat_arr[$i+1]."</td>";
+                  echo "<td class='".$difference_right_arr[$i+1]."'>".$char2_stat_arr[$i+1]."</td>";
+                  echo "<td>".$difference_stat_arr[$i+1]." %</td>";
+                echo "</tr>";
+              }
+            } else {
+              echo "<h1>".$no_account."</h1>";
             }
            ?>
         </table>
