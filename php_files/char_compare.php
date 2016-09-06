@@ -39,9 +39,11 @@
           <input type="submit" name="compare" value="vergleichen">
           <select name="char2">
             <?php
+            if (isset($_SESSION['charnames'])) {
               for ($i=0; $i < sizeof($_SESSION['charnames']); $i++) {
                 echo "<option value='".$_SESSION['char_id'][$i]."'>".$_SESSION['charnames'][$i]."</option>";
               }
+            }
             ?>
           </select>
         </form>
@@ -67,7 +69,11 @@
                 echo "</tr>";
               }
             } else {
-              echo "<h1>".$no_account."</h1>";
+              if (isset($_SESSION['charnames'])) {
+                echo "<h1>".$select_chars."</h1>";
+              } else {
+                echo "<h1>".$no_account."</h1>";
+              }
             }
            ?>
         </table>

@@ -41,7 +41,7 @@ header nav ul a:last-of-type {
   margin-right: 0;
 }
 
-header nav ul .unset-wrapper input[name="unset"] {
+header nav ul input[name="unset"] {
   position: absolute;
   right: 25px;
   font-family: 'Diablo3';

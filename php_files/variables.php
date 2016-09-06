@@ -16,7 +16,7 @@ $continent = "https://eu.";
 $locale = "?locale=de_DE";
 $api_profile = "api.battle.net/d3/profile/";
 $api_item = "api.battle.net/d3/data/";
-
+$no_account = "Bitte zuerst Account auswählen!";
 if (isset($_POST['unset'])) {
   session_unset();
   header('location: ../index.html');

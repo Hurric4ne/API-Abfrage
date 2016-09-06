@@ -65,7 +65,7 @@
   );
 
   for ($i=0; $i < sizeof($stat_arr); $i++) {
-    $stat_arr[$i] = str_replace(".", ",", $stat_arr[$i]);
+    $stat_arr[$i] = str_replace(".", ",", round($stat_arr[$i], 2));
   }
 
   $socket_arr = array();

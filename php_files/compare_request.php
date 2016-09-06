@@ -5,7 +5,6 @@
 
   if (isset($_POST['char1']) && isset($_POST['char2'])) {
     //erster Charakter dekodieren
-    //$char1_uri = "../dummy-folder/Lidra.json";
     $char1_uri = $_SESSION['link_arr'][$_POST['char1']];
     $char1_content = file_get_contents($char1_uri);
     $char1_decode = json_decode($char1_content, true);
@@ -20,7 +19,6 @@
     );
 
     //zweiter Charakter dekodieren
-    //$char2_uri = "../dummy-folder/Haemmerli.json";
     $char2_uri = $_SESSION['link_arr'][$_POST['char2']];
     $char2_content = file_get_contents($char2_uri);
     $char2_decode = json_decode($char2_content, true);
@@ -55,6 +53,7 @@
       }
     }
   }else { //ende isset-if
-    $no_account = "Bitte Charaktere auswählen!";
+    $select_chars = "Bitte Charaktere auswählen!";
+
   }
 ?>
