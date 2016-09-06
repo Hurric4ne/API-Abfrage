@@ -18,6 +18,11 @@
           <a href="../index.html"><li>Startseite</li></a>
           <a class="active"><li>Account-Auswahl</li></a>
           <a href="char_compare.php"><li>Charakter-Vergleich</li></a>
+          <li class="unset-wrapper">
+            <form action="account_select.php" method="post">
+              <input type="submit" name="unset" value="Ausloggen">
+            </form>
+          </li>
         </ul>
       </nav>
     </header>
