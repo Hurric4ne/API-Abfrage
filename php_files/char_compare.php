@@ -56,9 +56,9 @@
             for ($i=0; $i < sizeof($compare_arr); $i++) {
                 echo "<tr>";
                   echo "<td>".$compare_arr[$i]."</td>";
-                  echo "<td class='".$difference_left_arr[$i+1]."'>".$char1_stat_arr[$i+1]."</td>";
-                  echo "<td class='".$difference_right_arr[$i+1]."'>".$char2_stat_arr[$i+1]."</td>";
-                  echo "<td>".$difference_stat_arr[$i+1]." %</td>";
+                  echo "<td class='".$difference_left_arr[$i+1]."'>".str_replace('.', ',', $char1_stat_arr[$i+1])."</td>";
+                  echo "<td class='".$difference_right_arr[$i+1]."'>".str_replace('.', ',', $char2_stat_arr[$i+1])."</td>";
+                  echo "<td>".str_replace('.', ',', $difference_stat_arr[$i+1])." %</td>";
                 echo "</tr>";
               }
             } else {
