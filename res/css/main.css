@@ -54,8 +54,8 @@ header nav ul .unset-wrapper input[name="unset"] {
 }
 
 header nav ul .active {
-  color: lime;
-  border: 1px solid lime;
+  color: orange;
+  border: 1px solid red;
   cursor: default;
 }
 
