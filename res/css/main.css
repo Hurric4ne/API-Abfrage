@@ -21,8 +21,20 @@ header nav ul {
   margin: 0 auto;
 }
 
-header nav ul a {
+header nav ul li {
   float: left;
+  margin: 0 10px 0 10px;
+}
+
+header nav ul li:first-of-type {
+  margin-left: 0;
+}
+
+header nav ul li:nth-of-type(3) {
+  margin-right: 0;
+}
+
+header nav ul li a {
   font-family: 'Diablo3';
   font-size: 25px;
   color: white;
@@ -30,19 +42,11 @@ header nav ul a {
   border-radius: 5px;
   box-shadow: 0px 7px 5px -3px black;
   padding: 5px 7px 5px 7px;
-  margin: 0 10px 0 10px;
-}
-
-header nav ul a:first-of-type {
-  margin-left: 0;
-}
-
-header nav ul a:last-of-type {
-  margin-right: 0;
 }
 
 header nav ul input[name="unset"] {
   position: absolute;
+  top: 50px;
   right: 25px;
   font-family: 'Diablo3';
   height: 40px;
@@ -772,10 +776,6 @@ main {
   text-align: center;
 }
 
-header nav ul, .account-wrapper, .char-wrapper .skill-wrapper, .char-wrapper .passive-wrapper {
-  *zoom: 1;
-}
-
 header nav ul:before, .account-wrapper:before, .char-wrapper .skill-wrapper:before, .char-wrapper .passive-wrapper:before, header nav ul:after, .account-wrapper:after, .char-wrapper .skill-wrapper:after, .char-wrapper .passive-wrapper:after {
   content: "";
   display: table;
@@ -804,4 +804,8 @@ main {
   width: 100vw;
   background-color: #d3d3d3;
   padding: 50px;
+}
+
+table {
+  border-spacing: 0px;
 }

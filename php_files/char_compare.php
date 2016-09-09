@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <title>API-Abfrage</title>
     <link rel="shortcut icon" href="../res/img/favicon.ico">
-    <link rel="stylesheet" href="../res/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="../res/css/main.css">
     <?php
       require 'variables.php';
       require 'compare_request.php';
@@ -15,9 +15,9 @@
       <h3>Charakter-Vergleich</h3>
       <nav>
         <ul>
-          <a href="../index.html"><li>Startseite</li></a>
-          <a href="account_select.php"><li>Account-Auswahl</li></a>
-          <a class="active"><li>Charakter-Vergleich</li></a>
+          <li><a href="../index.html">Startseite</a></li>
+          <li><a href="account_select.php">Account-Auswahl</a></li>
+          <li><a class="active">Charakter-Vergleich</a></li>
           <li class="unset-wrapper">
             <form action="account_select.php" method="post">
               <input type="submit" name="unset" value="Ausloggen">
@@ -52,7 +52,7 @@
         <?php
           if (isset($_POST['char1']) && isset($_POST['char2']) ) {
         ?>
-        <table cellspacing="0">
+        <table>
           <tr>
             <th></th>
             <th><?php echo $char1_stat_arr[0]; ?> </th>

@@ -86,13 +86,13 @@
 
       echo "
       <a href='char_overview.php?$char_id'><div class='$char'>
-        <img class='icon' src='$class_icon$icon$gender'/>
+        <img class='icon' src='$class_icon$icon$gender' alt='$icon'/>
         <p class='name'>Name: $char_name</p>
         <p class='class'>Klasse: $char_class</p>
         <p class='level'>Level: $char_lvl</p>
         <p class='plevel'>Paragonstufe: $char_plvl</p>";
         if ($account['heroes'][$i]['seasonal'] == true) {
-          echo "<img class='leaf' src='$seasonal_leaf' title='seasonaler Charakter'/>";
+          echo "<img class='leaf' src='$seasonal_leaf' title='seasonaler Charakter' alt='seasonalLeaf'/>";
         }
       echo "</div></a>";
     } //for

@@ -13,7 +13,6 @@ $footer_height: 55px;
 
 //scss clearfix
 %clearfix {
-  *zoom: 1;
   &:before, &:after {
     content: "";
     display: table;
@@ -44,4 +43,8 @@ main {
   width: 100vw;
   background-color: #d3d3d3;
   padding: 50px;
+}
+
+table {
+  border-spacing: 0px;
 }

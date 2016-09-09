@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <title>API-Abfrage</title>
     <link rel="shortcut icon" href="../res/img/favicon.ico">
-    <link rel="stylesheet" href="../res/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="../res/css/main.css">
     <?php
       require 'variables.php';
       session_start();
@@ -15,9 +15,9 @@
       <h3>Account-Auswahl</h3>
       <nav>
         <ul>
-          <a href="../index.html"><li>Startseite</li></a>
-          <a class="active"><li>Account-Auswahl</li></a>
-          <a href="char_compare.php"><li>Charakter-Vergleich</li></a>
+          <li><a href="../index.html">Startseite</a></li>
+          <li><a class="active">Account-Auswahl</a></li>
+          <li><a href="char_compare.php">Charakter-Vergleich</a></li>
           <li class="unset-wrapper">
             <form action="account_select.php" method="post">
               <input type="submit" name="unset" value="Ausloggen">
@@ -29,7 +29,7 @@
     <main>
       <div class="input-wrapper">
         <form action="account_select.php" method="post">
-          <select name="continent" required>
+          <select name="continent">
             <option value="eu">Europa</option>
             <option value="us">Amerika</option>
           </select>

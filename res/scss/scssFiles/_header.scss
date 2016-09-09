@@ -19,26 +19,29 @@ header {
       margin: 0 auto;
       @extend %clearfix;
 
-      a {
+      li {
         float: left;
-        font-family: 'Diablo3';
-        font-size: 25px;
-        color: white;
-        border: 1px solid white;
-        border-radius: 5px;
-        box-shadow: 0px 7px 5px -3px black;
-        padding: 5px 7px 5px 7px;
         margin: 0 10px 0 10px;
         &:first-of-type {
           margin-left: 0;
         }
-        &:last-of-type {
+        &:nth-of-type(3) {
           margin-right: 0;
         }
-      } //a
+        a {
+          font-family: 'Diablo3';
+          font-size: 25px;
+          color: white;
+          border: 1px solid white;
+          border-radius: 5px;
+          box-shadow: 0px 7px 5px -3px black;
+          padding: 5px 7px 5px 7px;
+        } //a
+      } //li
 
       input[name="unset"] {
         position: absolute;
+        top: 50px;
         right: 25px;
         font-family: 'Diablo3';
         height: 40px;
