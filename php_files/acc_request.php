@@ -85,7 +85,7 @@
       $_SESSION['char_id'][$i] = $char_id;
 
       echo "
-      <a href='char_overview.php?$char_id'><div class='$char'>
+      <a href='char_overview.php?$char_id' onclick='showLoading()'><div class='$char'>
         <img class='icon' src='$class_icon$icon$gender' alt='$icon'/>
         <p class='name'>Name: $char_name</p>
         <p class='class'>Klasse: $char_class</p>

@@ -23,6 +23,18 @@
   }
 }
 
+.loading-wrapper {
+  width: 350px;
+  margin: 0 auto;
+
+  .hideLoading {
+    visibility: hidden;
+  }
+  .showLoading {
+    visibility: visible;
+  }
+} //loading-wrapper
+
 .table-wrapper {
   width: 800px;
   margin: 0 auto;

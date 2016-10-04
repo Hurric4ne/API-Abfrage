@@ -36,7 +36,7 @@
               }
             ?>
           </select>
-          <input type="submit" name="compare" value="vergleichen">
+          <input type="submit" name="compare" value="vergleichen" onclick="showLoading()">
           <select name="char2">
             <?php
             if (isset($_SESSION['charnames'])) {
@@ -47,6 +47,9 @@
             ?>
           </select>
         </form>
+      </div>
+      <div class="loading-wrapper">
+        <img id="loading" class="hideLoading" src="../res/img/loading.gif" alt="loading" />
       </div>
       <div class="table-wrapper">
         <?php
@@ -82,5 +85,6 @@
     <footer>
       <p>©1996 - 2016 Blizzard Entertainment, Inc. All rights reserved.<br>Battle.net, Blizzard Entertainment, Diablo and Reaper of Souls are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
     </footer>
+    <script src="../res/javascript/main.js"></script>
   </body>
 </html>

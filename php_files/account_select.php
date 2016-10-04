@@ -33,9 +33,12 @@
             <option value="eu">Europa</option>
             <option value="us">Amerika</option>
           </select>
-          <input type="text" name="BattleTag" pattern="^\D[0-9A-Za-z]{2,11}#\d{4,5}$" placeholder="BattleTag#1234" required>
-          <input type="submit" name="search" value="suchen">
+          <input id="BattleTag" type="text" name="BattleTag" pattern="^\D[0-9A-Za-z]{2,11}#\d{4,5}$" placeholder="BattleTag#1234" required>
+          <input type="submit" name="search" value="suchen" onclick="showInitLoading()">
         </form>
+      </div>
+      <div class="loading-wrapper">
+        <img id="loading" class="hideLoading" src="../res/img/loading.gif" alt="loading" />
       </div>
       <div class="account-wrapper">
         <?php
@@ -46,5 +49,6 @@
     <footer>
       <p>©1996 - 2016 Blizzard Entertainment, Inc. All rights reserved.<br>Battle.net, Blizzard Entertainment, Diablo and Reaper of Souls are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
     </footer>
-  </body>
+    <script src="../res/javascript/main.js"></script>
+</body>
 </html>

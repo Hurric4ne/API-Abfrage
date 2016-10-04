@@ -171,11 +171,23 @@ footer p:first-of-type {
   vertical-align: bottom;
 }
 
+.loading-wrapper {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.loading-wrapper .hideLoading {
+  visibility: hidden;
+}
+
+.loading-wrapper .showLoading {
+  visibility: visible;
+}
+
 .account-wrapper {
   width: 1410px;
   height: 600px;
   margin: 0 auto;
-  margin-top: 25px;
 }
 
 .account-wrapper .char {
@@ -717,6 +729,19 @@ main {
   border-radius: 5px;
   cursor: pointer;
   vertical-align: bottom;
+}
+
+.loading-wrapper {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.loading-wrapper .hideLoading {
+  visibility: hidden;
+}
+
+.loading-wrapper .showLoading {
+  visibility: visible;
 }
 
 .table-wrapper {
