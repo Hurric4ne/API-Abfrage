@@ -1,17 +1,15 @@
 .bg {
   background: url('../img/background.jpg');
-  width: 100vw;
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
   .landingPage_Wrapper {
     width: 80vw;
+    height: 100vh;
     margin: 0 auto;
-    height: 20vh;
-    padding-top: 30%;
-    transform: translateY(-70%);
+    padding-top: 15%;
+    transform: translateY(-15%);
     font-family: 'Diablo3';
     text-align: center;
 

@@ -3,8 +3,8 @@ $header_height: 120px;
 $footer_height: 55px;
 
 //scss imports
-@import "scssFiles/header.scss";
-@import "scssFiles/footer.scss";
+@import "scssFiles/header";
+@import "scssFiles/footer";
 @import "scssFiles/landingPage";
 @import "scssFiles/account_select";
 @import "scssFiles/char_overview";
@@ -39,7 +39,7 @@ $footer_height: 55px;
 }
 
 main {
-  height: 900px;
+  height: 85vh;
   width: 100vw;
   background-color: #d3d3d3;
   padding: 50px;
